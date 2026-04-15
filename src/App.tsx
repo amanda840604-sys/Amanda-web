@@ -77,7 +77,7 @@ const PROJECTS = [
   {id:'toy',cat:'product',subcat:'toy',title:'玩具設計',short:'兒童益智玩具系列',desc:'兒童益智玩具系列設計，包含角色造型、結構拼組與安全材質規劃。',tags:['玩具設計','CMF'], images: []},
   {id:'sketch',cat:'product',subcat:'sketch',title:'手繪作品',short:'人物速寫 / 產品草圖 / 概念插畫',desc:'人物速寫、產品草圖與概念插畫，展現設計思維與手感表達能力。',tags:['手繪','插畫'], images: []},
   {id:'tws_card',cat:'packaging',subcat:'ce',title:'TWS 紙卡內襯設計',short:'TWS 耳機紙卡內襯方案總覽',desc:'針對 TWS 耳機系列開發紙卡內襯，彙整多種結構選項，形成模組化設計資料庫。',tags:['包裝設計','TWS','紙卡'], images: []},
-  {id:'tws_pkg',cat:'packaging',subcat:'ce',title:'TWS 包裝設計',short:'TWS 耳機完整包裝設計',desc:'為國際品牌 TWS 耳機設計完整包材，包含外箱、內裝結構與印刷規格。',tags:['包裝設計','消費電子'], images: []},
+  {id:'tws_pkg',cat:'packaging',subcat:'ce',title:'TWS 包裝設計',short:'TWS 耳機完整包裝設計',desc:'為國際品牌 TWS 耳機設計完整包材，包含外箱、內裝結構與印刷規格。',tags:['包裝設計','消費電子'], images: ['/TWS 包裝設計01.jpg', '/TWS 包裝設計02.jpg']},
   {id:'hdt_card',cat:'packaging',subcat:'ce',title:'HDT 紙卡內襯設計',short:'電競耳機包裝結構方案',desc:'HDT 電競耳機紙卡內襯設計，提出多選項比較方案，支援 RFQ 提案決策。',tags:['包裝設計','HDT'], images: []},
   {id:'soundbar_card',cat:'packaging',subcat:'ce',title:'Soundbar 紙卡內襯設計',short:'Soundbar 包裝內構設計',desc:'Soundbar 紙卡內襯結構設計，考量產品尺寸與跌落保護需求。',tags:['包裝設計','Soundbar'], images: []},
   {id:'soundbar_pkg',cat:'packaging',subcat:'ce',title:'Soundbar 設計',short:'Soundbar 整體包裝方案',desc:'Speaker Packaging Design，採用 Harvest Foam Dry-Pressed Pulp Tray，整合環保材質與品牌呈現。',tags:['包裝設計','永續','Soundbar'], images: []},
