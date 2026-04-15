@@ -70,26 +70,26 @@ const INITIAL_SKILLS = [
 ];
 
 const PROJECTS = [
-  {id:'hood',cat:'product',subcat:'appliance',title:'油煙機設計',short:'薄化歐化油煙機、近吸油煙機系列',desc:'為 SAKURA 品牌設計薄化歐化油煙機（2020）及近吸油煙機（2022）、歐化油煙機（2021）系列。涵蓋外觀造型、CMF 規格、結構工程圖及量產驗證，兼顧空氣動力學效能與現代廚房美學。',tags:['產品設計','廚房家電','SAKURA'], images: []},
-  {id:'gas',cat:'product',subcat:'appliance',title:'瓦斯爐設計',short:'嵌入式瓦斯爐工業設計',desc:'嵌入式瓦斯爐工業設計，強調人因操作介面與安全結構整合，完成旋鈕、爐架與玻璃面板之 CMF 規格輸出。',tags:['產品設計','家電'], images: []},
-  {id:'wearable',cat:'product',subcat:'medical',title:'穿戴式裝置設計',short:'睡眠監測智慧手環',desc:'睡眠監測智慧手環設計，整合感測模組與舒適穿戴結構，完成 CMF 規格及爆炸圖輸出。',tags:['穿戴裝置','醫療'], images: []},
-  {id:'medical',cat:'product',subcat:'medical',title:'醫療器材設計',short:'低頻治療儀 / 霧化器 / SPO2 手環',desc:'包含低周波治療器 2 款外觀提案、兒童用霧化器外觀提案及 SPO2 手環 5 款外觀提案，完成外觀造型、爆炸圖與量產工程規格文件。',tags:['醫療器材','工業設計'], images: []},
-  {id:'toy',cat:'product',subcat:'toy',title:'玩具設計',short:'兒童益智玩具系列',desc:'兒童益智玩具系列設計，包含角色造型、結構拼組與安全材質規劃。',tags:['玩具設計','CMF'], images: []},
+  {id:'hood',cat:'product',subcat:'appliance',title:'油煙機設計',short:'薄化歐化油煙機、近吸油煙機系列',desc:'為 SAKURA 品牌設計薄化歐化油煙機（2020）及近吸油煙機（2022）、歐化油煙機（2021）系列。涵蓋外觀造型、CMF 規格、結構工程圖及量產驗證，兼顧空氣動力學效能與現代廚房美學。',tags:['產品設計','廚房家電','SAKURA'], images: ['/歐化油煙機01.jpg', '/歐化油煙機02.jpg', '/近吸油煙機.jpg']},
+  {id:'gas',cat:'product',subcat:'appliance',title:'瓦斯爐設計',short:'嵌入式瓦斯爐工業設計',desc:'嵌入式瓦斯爐工業設計，強調人因操作介面與安全結構整合，完成旋鈕、爐架與玻璃面板之 CMF 規格輸出。',tags:['產品設計','家電'], images: ['/易清瓦斯爐.jpg']},
+  {id:'wearable',cat:'product',subcat:'medical',title:'穿戴式裝置設計',short:'睡眠監測智慧手環',desc:'睡眠監測智慧手環設計，整合感測模組與舒適穿戴結構，完成 CMF 規格及爆炸圖輸出。',tags:['穿戴裝置','醫療'], images: ['/EMG_穿戴式裝置01.jpg', '/EMG_穿戴式裝置02.jpg', '/EMG_穿戴式裝置03.jpg', '/EMG_穿戴式裝置04.jpg']},
+  {id:'medical',cat:'product',subcat:'medical',title:'醫療器材設計',short:'低頻治療儀 / 霧化器 / SPO2 手環',desc:'包含低周波治療器 2 款外觀提案、兒童用霧化器外觀提案及 SPO2 手環 5 款外觀提案，完成外觀造型、爆炸圖與量產工程規格文件。',tags:['醫療器材','工業設計'], images: ['/EMG_醫療器材02.jpg']},
+  {id:'toy',cat:'product',subcat:'toy',title:'玩具設計',short:'兒童益智玩具系列',desc:'兒童益智玩具系列設計，包含角色造型、結構拼組與安全材質規劃。',tags:['玩具設計','CMF'], images: ['/研成_玩具設計.jpg']},
   {id:'sketch',cat:'product',subcat:'sketch',title:'手繪作品',short:'人物速寫 / 產品草圖 / 概念插畫',desc:'人物速寫、產品草圖與概念插畫，展現設計思維與手感表達能力。',tags:['手繪','插畫'], images: []},
   {id:'tws_card',cat:'packaging',subcat:'ce',title:'TWS 紙卡內襯設計',short:'TWS 耳機紙卡內襯方案總覽',desc:'針對 TWS 耳機系列開發紙卡內襯，彙整多種結構選項，形成模組化設計資料庫。',tags:['包裝設計','TWS','紙卡'], images: ['/TWS 紙卡內襯設計01.png', '/TWS 紙卡內襯設計02.png', '/TWS 紙卡內襯設計03.png', '/TWS 紙卡內襯設計04.png', '/TWS 紙卡內襯設計05.png', '/TWS 紙卡內襯設計06.png', '/TWS 紙卡內襯設計07.png', '/TWS 紙卡內襯設計08.png', '/TWS 紙卡內襯設計09.png', '/TWS 紙卡內襯設計10.png', '/TWS 紙卡內襯設計11.png', '/TWS 紙卡內襯設計12.png']},
-  {id:'tws_pkg',cat:'packaging',subcat:'ce',title:'TWS 包裝設計',short:'TWS 耳機完整包裝設計',desc:'為國際品牌 TWS 耳機設計完整包材，包含外箱、內裝結構與印刷規格。',tags:['包裝設計','消費電子'], images: ['/TWS 包裝設計01.jpg', '/TWS 包裝設計01-1.jpg', '/TWS 包裝設計02.jpg', '/TWS 包裝設計02-1.jpg']},
-  {id:'hdt_card',cat:'packaging',subcat:'ce',title:'HDT 紙卡內襯設計',short:'電競耳機包裝結構方案',desc:'HDT 電競耳機紙卡內襯設計，提出多選項比較方案，支援 RFQ 提案決策。',tags:['包裝設計','HDT'], images: []},
+  {id:'tws_pkg',cat:'packaging',subcat:'ce',title:'TWS 包裝設計',short:'TWS 耳機完整包裝設計',desc:'為國際品牌 TWS 耳機設計完整包材，包含外箱、內裝結構與印刷規格。',tags:['包裝設計','消費電子'], images: ['/TWS 包裝設計01.jpg', '/TWS 包裝設計02.jpg']},
+  {id:'hdt_card',cat:'packaging',subcat:'ce',title:'HDT 紙卡內襯設計',short:'電競耳機包裝結構方案',desc:'HDT 電競耳機紙卡內襯設計，提出多選項比較方案，支援 RFQ 提案決策。',tags:['包裝設計','HDT'], images: ['/HDT 紙卡內襯設計01.jpg', '/HDT 紙卡內襯設計02.jpg', '/HDT 紙卡內襯設計03.jpg', '/HDT 紙卡內襯設計04.jpg', '/HDT 紙卡內襯設計05.jpg', '/HDT 紙卡內襯設計06.jpg', '/HDT 紙卡內襯設計07.jpg', '/HDT 紙卡內襯設計08.jpg', '/HDT 紙卡內襯設計09.jpg', '/HDT 紙卡內襯設計10.jpg', '/HDT 紙卡內襯設計11.jpg', '/HDT 紙卡內襯設計12.jpg', '/HDT 紙卡內襯設計13.jpg', '/HDT 紙卡內襯設計14.jpg']},
   {id:'soundbar_card',cat:'packaging',subcat:'ce',title:'Soundbar 紙卡內襯設計',short:'Soundbar 包裝內構設計',desc:'Soundbar 紙卡內襯結構設計，考量產品尺寸與跌落保護需求。',tags:['包裝設計','Soundbar'], images: ['/Soundbar 紙卡內襯設計01.png', '/Soundbar 紙卡內襯設計02.png', '/Soundbar 紙卡內襯設計03.png', '/Soundbar 紙卡內襯設計04.jpg', '/Soundbar 紙卡內襯設計05.jpg', '/Soundbar 紙卡內襯設計06.jpg', '/Soundbar 紙卡內襯設計07.jpg', '/Soundbar 紙卡內襯設計08.jpg']},
   {id:'soundbar_pkg',cat:'packaging',subcat:'ce',title:'Soundbar 設計',short:'Soundbar 整體包裝方案',desc:'Speaker Packaging Design，採用 Harvest Foam Dry-Pressed Pulp Tray，整合環保材質與品牌呈現。',tags:['包裝設計','永續','Soundbar'], images: ['/Soundbar 設計01.jpg']},
   {id:'webcam',cat:'packaging',subcat:'ce',title:'視訊鏡頭包裝設計',short:'Webcam Packaging Design',desc:'視訊鏡頭包裝設計，採 Black Wet-Pressed Pulp Tray，兼顧防護與環保需求。',tags:['包裝設計','紙托'], images: ['/視訊鏡頭包裝設計001.jpg', '/視訊鏡頭包裝設計002.jpg']},
   {id:'carrycase',cat:'packaging',subcat:'bike',title:'Carrycase 包袋設計',short:'收納包袋結構設計',desc:'自行車零件收納包袋設計，考量多 SKU 共用與模組化包裝平台。',tags:['包裝設計','自行車'], images: ['/Carrycase 包袋設計01.jpg']},
   {id:'mtb',cat:'packaging',subcat:'bike',title:'MTB Handle Bar 包裝設計',short:'MTB 車把手包裝設計',desc:'MTB 車把手三層瓦楞結構包裝，考量層板方案、正面紙板與包裝底座。',tags:['包裝設計','自行車','Handle Bar'], images: ['/MTB Handle Bar 包裝設計01.jpg', '/MTB Handle Bar 包裝設計02.jpg', '/MTB Handle Bar 包裝設計03.jpg', '/MTB Handle Bar 包裝設計04.png', '/MTB Handle Bar 包裝設計05.png', '/MTB Handle Bar 包裝設計06.png']},
   {id:'tr',cat:'packaging',subcat:'bike',title:'TR Handle Bar 包裝設計',short:'TR 車把手包裝設計',desc:'TR Handle Bar 包裝結構設計，統整行李方案、正面紙板至包裝底座完整流程。',tags:['包裝設計','自行車'], images: ['/TR Handle Bar 包裝設計01.jpg', '/TR Handle Bar 包裝設計02.jpg', '/TR Handle Bar 包裝設計03.jpg', '/TR Handle Bar 包裝設計04.jpg', '/TR Handle Bar 包裝設計05.jpg', '/TR Handle Bar 包裝設計06.png', '/TR Handle Bar 包裝設計07.png', '/TR Handle Bar 包裝設計08.png']},
-  {id:'ra',cat:'packaging',subcat:'bike',title:'RA Handle Bar 包裝設計',short:'RA 車把手包裝設計',desc:'RA Handle Bar 系列包裝設計，涵蓋運輸、展示與量產導入規格。',tags:['包裝設計','自行車'], images: ['/RA Handle Bar 包裝設計01.png', '/RA Handle Bar 包裝設計02.png', '/RA Handle Bar 包裝設計03.png', '/RA Handle Bar 包裝設計04.png', '/RA Handle Bar 包裝設計05.png', '/RA Handle Bar 包裝設計06.png', '/RA Handle Bar 包裝設計06-1.png', '/RA Handle Bar 包裝設計07.png', '/RA Handle Bar 包裝設計07-1.png']},
+  {id:'ra',cat:'packaging',subcat:'bike',title:'RA Handle Bar 包裝設計',short:'RA 車把手包裝設計',desc:'RA Handle Bar 系列包裝設計，涵蓋運輸、展示與量產導入規格。',tags:['包裝設計','自行車'], images: ['/RA Handle Bar 包裝設計01.png', '/RA Handle Bar 包裝設計02.png', '/RA Handle Bar 包裝設計03.png', '/RA Handle Bar 包裝設計04.png', '/RA Handle Bar 包裝設計05.png', '/RA Handle Bar 包裝設計06.png', '/RA Handle Bar 包裝設計07.png']},
   {id:'seatpost',cat:'packaging',subcat:'bike',title:'座管 包裝設計',short:'座管包裝結構設計',desc:'自行車座管包裝結構設計，針對細長零件開發全紙質緩衝方案。',tags:['包裝設計','自行車','減塑'], images: []},
   {id:'steerer',cat:'packaging',subcat:'bike',title:'立管 包裝設計',short:'立管包裝結構設計',desc:'立管包裝設計，開發輕量化、可回收包材方案。',tags:['包裝設計','自行車'], images: []},
   {id:'quickrelease',cat:'packaging',subcat:'bike',title:'快拆束仔 包裝設計',short:'快拆束仔包裝設計',desc:'快拆束仔小零件包裝設計，兼顧防護性與零售展示需求。',tags:['包裝設計','自行車'], images: []},
-  {id:'graphic',cat:'graphic',subcat:'branding',title:'平面設計',short:'品牌CIS / 海報 / 識別物料',desc:'品牌視覺識別系統（CIS）、海報設計與企業識別物料整合輸出。',tags:['品牌設計','平面','CIS'], images: []}
+  {id:'graphic',cat:'graphic',subcat:'branding',title:'平面設計',short:'品牌CIS / 海報 / 識別物料',desc:'品牌視覺識別系統（CIS）、海報設計與企業識別物料整合輸出。',tags:['品牌設計','平面','CIS'], images: ['/海報設計.jpg']}
 ];
 
 const COURSES = [
@@ -101,7 +101,8 @@ const COURSES = [
     date:'2026.03.26',
     hours:'48 小時',
     desc:'聚集包裝結構設計、運輸測試與成本優化方法，提升包材選型與量產導入判斷能力。',
-    outcomes: ['包裝結構力學分析', 'ISTA 運輸測試標準', '包裝材料成本估算', '永續包材選用指南']
+    outcomes: ['包裝結構力學分析', 'ISTA 運輸測試標準', '包裝材料成本估算', '永續包材選用指南'],
+    images: ['/包裝結構設計、運輸驗證與成本優化實務課程.png', '/呈曜包裝創辦人 許呈湧老師 課後合影.jpg']
   },
   {
     cat: 'ai', 
@@ -111,7 +112,8 @@ const COURSES = [
     date:'2025.03 – 2025.04',
     hours:'16 小時',
     desc:'學習建立 AI 機器人與 LINE 官方帳號整合應用，實現品牌溝通自動化。',
-    outcomes: ['ChatGPT 進階指令技巧', 'MAKE 自動化工作流建置', 'LINE Bot 整合應用', 'AI 內容生成策略']
+    outcomes: ['ChatGPT 進階指令技巧', 'MAKE 自動化工作流建置', 'LINE Bot 整合應用', 'AI 內容生成策略'],
+    images: ['/chat gpt lv1.JPG', '/make lv1.JPG', '/NUVA 創辦人林上哲 課後合影.jpg']
   },
   {
     cat: 'ai', 
@@ -121,7 +123,8 @@ const COURSES = [
     date:'2025.12.09 – 2025.12.17',
     hours:'30 小時',
     desc:'學習 AI 基礎概論與架構、機器學習（監督式/非監督式學習）技術理論與案例、以及生成式 AI 的原理與應用。',
-    outcomes: ['機器學習基礎理論', '生成式 AI 技術原理', '產業 AI 導入案例分析', 'AI 模型評估與優化']
+    outcomes: ['機器學習基礎理論', '生成式 AI 技術原理', '產業 AI 導入案例分析', 'AI 模型評估與優化'],
+    images: ['/在職菁英AI人才培育課程.png']
   },
   {
     cat: 'ai', 
@@ -132,7 +135,7 @@ const COURSES = [
     hours:'48 小時',
     desc:'系統化學習 AI 導入、規劃與應用情境建構，強化跨領域數位工具整合能力。',
     outcomes: ['AI 應用場景規劃', '數位轉型策略制定', 'AI 工具鏈整合', '證照考試重點解析'],
-    image: '/iPAS AI應用規劃師初級能力培訓班.jpg'
+    images: ['/iPAS AI應用規劃師初級能力培訓班.jpg', '/iPAS AI應用規劃師初級證照班課程_ccchen.jpg']
   }
 ];
 
@@ -146,6 +149,7 @@ const EXP_DATA = [
   {
     role:'包裝工程師', co:'美律實業股份有限公司', period:'2022/7～2025/05・2年11個月',
     loc:'台中市南屯區・精密儀器相關製造業 500人以上',
+    logo: '/MERRY_LOGO.png',
     duties:['消費性電子產品包裝開發工作、包裝相關提案與結構設計','新機型產品包材圖面繪製、包裝作業流程製作','包裝廠商樣品追蹤、品質問題改善確認'],
     results:[
       '國際品牌 TWS / HDT / Soundbar 包裝設計提案（共 25 件）',
@@ -157,6 +161,7 @@ const EXP_DATA = [
   {
     role:'產品設計師', co:'台灣櫻花股份有限公司', period:'2020/3～2022/7・2年5個月',
     loc:'台中市大雅區・非金屬家具及裝設品製造業 500人以上',
+    logo: '/SAKURA_LOGO.png',
     duties:['針對 PM 市場規劃結合消費者調查結果擬定設計方向','跨部門協作經驗','國內外廚電市場與造型趨勢調研'],
     results:[
       '2021 年度績優員工',
@@ -168,6 +173,7 @@ const EXP_DATA = [
   {
     role:'產品設計師', co:'上岳科技股份有限公司', period:'2018/11～2019/12・1年2個月',
     loc:'台中市南屯區・醫療器材製造業 30–100人',
+    logo: '/EMG_LOGO.png',
     duties:['新品提案與簡報製作','依據 RD 提供模組進行產品設計提案，含視覺、材質規劃與造型風格定調','產品造型設計'],
     results:[
       '低周波治療器 2 款外觀提案',
@@ -179,6 +185,7 @@ const EXP_DATA = [
   {
     role:'產品設計師', co:'研成股份有限公司', period:'2017/8～2018/8・1年1個月',
     loc:'新北市新店區・專門設計相關業 30–100人',
+    logo: '/cic-logo.png.png',
     duties:['新品提案與簡報製作','依據 RD 提供模組進行產品設計提案','產品造型設計'],
     results:[
       '獨立負責日本學研 GAKKEN 委託之鋁製品設計案',
@@ -190,9 +197,9 @@ const EXP_DATA = [
 ];
 
 const INTERESTS = [
-  { id: 'gym', title: '重量訓練', icon: Dumbbell, goal: '目前每週2練，\n目標提升至每週4練！', desc: '訓練耐力與自律，堅持每一步小進步，挑戰更強的自己。', emojis: ['🏋️', '💪', '🏃', '⚡'] },
-  { id: 'marathon', title: '馬拉松', icon: Timer, goal: '5次半馬，\n目標完成人生第一場全馬！', desc: '目前有5次半馬的經驗，目標挑戰人生第一場全馬拉松，不只是體能，更是堅持信念的挑戰！', emojis: ['🏅', '🎽', '🏃‍♀️', '🥇'] },
-  { id: 'hiking', title: '登山', icon: Mountain, goal: '登頂2座百岳，\n目標持續挑戰台灣百岳全集！', desc: '除了健身與長跑，我也熱愛登山挑戰，目前已成功攀登兩座台灣百岳。', emojis: ['⛰️', '🌄', '🥾', '🗻'] }
+  { id: 'gym', title: '重量訓練', icon: Dumbbell, goal: '目前每週2練，\n目標提升至每週4練！', desc: '訓練耐力與自律，堅持每一步小進步，挑戰更強的自己。', emojis: ['🏋️', '💪', '🏃', '⚡'], image: '/健身.jpg' },
+  { id: 'marathon', title: '馬拉松', icon: Timer, goal: '5次半馬，\n目標完成人生第一場全馬！', desc: '目前有5次半馬的經驗，目標挑戰人生第一場全馬拉松，不只是體能，更是堅持信念的挑戰！', emojis: ['🏅', '🎽', '🏃‍♀️', '🥇'], image: '/馬拉松.jpg' },
+  { id: 'hiking', title: '登山', icon: Mountain, goal: '登頂2座百岳，\n目標持續挑戰台灣百岳全集！', desc: '除了健身與長跑，我也熱愛登山挑戰，目前已成功攀登兩座台灣百岳。', emojis: ['⛰️', '🌄', '🥾', '🗻'], image: '/登山.jpg' }
 ];
 
 const TABS = [
@@ -205,17 +212,12 @@ const TABS = [
 ];
 
 const AvatarSVG = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className="w-[72px] h-[72px] opacity-75">
-    <circle cx="50" cy="38" r="22" fill="#c8d8cf"/>
-    <ellipse cx="50" cy="85" rx="30" ry="18" fill="#c8d8cf"/>
-    <circle cx="50" cy="38" r="18" fill="#e8f0ed"/>
-    <rect x="30" y="20" width="40" height="14" rx="7" fill="#3d7a5a"/>
-    <circle cx="43" cy="40" r="3" fill="#3d7a5a"/>
-    <circle cx="57" cy="40" r="3" fill="#3d7a5a"/>
-    <path d="M44 48 q6 5 12 0" stroke="#aaa" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-    <rect x="26" y="30" width="8" height="5" rx="2.5" fill="#3d7a5a" transform="rotate(-10 26 32)"/>
-    <rect x="66" y="30" width="8" height="5" rx="2.5" fill="#3d7a5a" transform="rotate(10 70 32)"/>
-  </svg>
+  <img 
+    src="/Profolio_photo.jpg" 
+    alt="賴以婕 Amanda" 
+    className="w-full h-full object-cover"
+    referrerPolicy="no-referrer"
+  />
 );
 
 const ProjectPlaceholder = ({ id, cat }: { id: string, cat: string }) => {
@@ -595,7 +597,11 @@ export default function App() {
               <div className="flex items-center gap-3">
                 <div className="w-10 flex justify-center shrink-0">
                   <div className="w-10 h-10 rounded-lg bg-white border border-[#e9ecef] shrink-0 flex items-center justify-center overflow-hidden relative group">
-                    <span className="text-[10px] font-semibold text-[#adb5bd]">LOGO</span>
+                    {exp.logo ? (
+                      <img src={exp.logo} alt={exp.co} className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" />
+                    ) : (
+                      <span className="text-[10px] font-semibold text-[#adb5bd]">LOGO</span>
+                    )}
                   </div>
                 </div>
                 <div>
@@ -676,7 +682,7 @@ export default function App() {
           <div className="flex gap-3 items-center">
             <div className="w-10 flex justify-center shrink-0">
               <div className="w-10 h-10 rounded-lg bg-white border border-[#e9ecef] shrink-0 flex items-center justify-center overflow-hidden relative group">
-                <span className="text-[10px] font-semibold text-[#adb5bd]">LOGO</span>
+                <img src="/台科大_LOGO.png" alt="國立臺灣科技大學" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" />
               </div>
             </div>
             <div>
@@ -687,7 +693,7 @@ export default function App() {
           <div className="flex gap-3 items-center">
             <div className="w-10 flex justify-center shrink-0">
               <div className="w-10 h-10 rounded-lg bg-white border border-[#e9ecef] shrink-0 flex items-center justify-center overflow-hidden relative group">
-                <span className="text-[10px] font-semibold text-[#adb5bd]">LOGO</span>
+                <img src="/台中高工_LOGO.jpg" alt="國立台中高工" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" />
               </div>
             </div>
             <div>
@@ -783,12 +789,20 @@ export default function App() {
             軟體工具
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8 pl-[52px]">
-            {['SolidWorks', 'Creo', 'KeyShot', 'Illustrator', 'Photoshop', 'InDesign', 'AutoCAD'].map((t, i) => (
+            {[
+              { name: 'SolidWorks', logo: '/solidworks_LOGO.jpg' },
+              { name: 'Creo', logo: '/creo_LOGO.png' },
+              { name: 'KeyShot', logo: '/keyshot-logo.jpg' },
+              { name: 'Illustrator', logo: '/ILLUSTRATOR_LOGO.jpg' },
+              { name: 'Photoshop', logo: '/Photoshop-Logo-2015.jpg' },
+              { name: 'InDesign', logo: '/Adobe_InDesign_logo.png' },
+              { name: 'AutoCAD', logo: '/autocad_LOGO.jpg' }
+            ].map((t, i) => (
               <div key={i} className="flex items-center gap-2.5 p-2 rounded-lg border-2 border-[#e9ecef] bg-white hover:border-[#3d7a5a] transition-colors">
                 <div className="w-8 h-8 rounded bg-white flex items-center justify-center shrink-0 border border-[#e9ecef] overflow-hidden relative group">
-                  <span className="text-[8px] text-[#adb5bd] font-semibold">LOGO</span>
+                  <img src={t.logo} alt={t.name} className="w-full h-full object-contain p-0.5" referrerPolicy="no-referrer" />
                 </div>
-                <span className="text-sm font-semibold text-[#343a40]">{t}</span>
+                <span className="text-sm font-semibold text-[#343a40]">{t.name}</span>
               </div>
             ))}
           </div>
@@ -1022,8 +1036,12 @@ export default function App() {
                     className="p-4 cursor-pointer flex flex-col sm:flex-row sm:items-center gap-4"
                     onClick={() => setExpandedCourse(isExpanded ? null : i)}
                   >
-                    <div className="w-full sm:w-32 h-20 shrink-0 bg-[#f8f9fa] rounded-lg flex items-center justify-center text-xl border border-[#e9ecef]">
-                      <span className="text-[10px] font-semibold text-[#adb5bd]">暫無圖片</span>
+                    <div className="w-full sm:w-32 h-20 shrink-0 bg-white rounded-lg flex items-center justify-center text-xl border border-[#e9ecef] overflow-hidden">
+                      {c.images && c.images.length > 0 ? (
+                        <img src={c.images[0]} alt={c.title} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                      ) : (
+                        <span className="text-[10px] font-semibold text-[#adb5bd]">暫無圖片</span>
+                      )}
                     </div>
                     
                     <div className="flex-1 min-w-0">
@@ -1140,8 +1158,12 @@ export default function App() {
             whileHover={{ y: -4, shadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)" }}
             className="border-2 border-[#e9ecef] rounded-xl overflow-hidden transition-all hover:border-[#3d7a5a] flex flex-col bg-white"
           >
-            <div className="h-[280px] bg-[#f8f9fa] flex items-center justify-center text-4xl relative overflow-hidden">
-              {int.emojis[0]}
+            <div className="h-[280px] bg-white flex items-center justify-center text-4xl relative overflow-hidden">
+              {int.image ? (
+                <img src={int.image} alt={int.title} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              ) : (
+                int.emojis[0]
+              )}
               <div className="absolute right-2 bottom-2 opacity-10">
                 <Icon size={48} />
               </div>
@@ -1317,14 +1339,16 @@ export default function App() {
                 )}
                 {lightboxCourse && (
                   <div className="flex flex-col gap-6">
-                    {lightboxCourse.image ? (
-                      <div className="w-full bg-white rounded-xl overflow-hidden flex justify-center p-2 sm:p-4 border border-[#e9ecef]">
-                        <img 
-                          src={lightboxCourse.image} 
-                          alt={lightboxCourse.title} 
-                          className="max-w-full h-auto object-contain block shadow-sm rounded-lg" 
-                        />
-                      </div>
+                    {lightboxCourse.images && lightboxCourse.images.length > 0 ? (
+                      lightboxCourse.images.map((img: string, idx: number) => (
+                        <div key={idx} className="w-full bg-white rounded-xl overflow-hidden flex justify-center p-2 sm:p-4 border border-[#e9ecef]">
+                          <img 
+                            src={img} 
+                            alt={`${lightboxCourse.title} - ${idx + 1}`} 
+                            className="max-w-full h-auto object-contain block shadow-sm rounded-lg" 
+                          />
+                        </div>
+                      ))
                     ) : (
                       <div className="p-8 text-center h-[300px] flex items-center justify-center bg-white rounded-lg text-[#adb5bd] font-semibold border-2 border-dashed border-[#dee2e6]">
                         尚未上傳照片
