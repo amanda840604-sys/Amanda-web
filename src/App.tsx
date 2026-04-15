@@ -75,7 +75,7 @@ const PROJECTS = [
   {id:'wearable',cat:'product',subcat:'medical',title:'穿戴式裝置設計',short:'睡眠監測智慧手環',desc:'睡眠監測智慧手環設計，整合感測模組與舒適穿戴結構，完成 CMF 規格及爆炸圖輸出。',tags:['穿戴裝置','醫療'], images: ['/EMG_穿戴式裝置01.jpg', '/EMG_穿戴式裝置02.jpg', '/EMG_穿戴式裝置03.jpg', '/EMG_穿戴式裝置04.jpg']},
   {id:'medical',cat:'product',subcat:'medical',title:'醫療器材設計',short:'低頻治療儀 / 霧化器 / SPO2 手環',desc:'包含低周波治療器 2 款外觀提案、兒童用霧化器外觀提案及 SPO2 手環 5 款外觀提案，完成外觀造型、爆炸圖與量產工程規格文件。',tags:['醫療器材','工業設計'], images: ['/EMG_醫療器材02.jpg']},
   {id:'toy',cat:'product',subcat:'toy',title:'玩具設計',short:'兒童益智玩具系列',desc:'兒童益智玩具系列設計，包含角色造型、結構拼組與安全材質規劃。',tags:['玩具設計','CMF'], images: ['/研成_玩具設計.jpg']},
-  {id:'sketch',cat:'product',subcat:'sketch',title:'手繪作品',short:'人物速寫 / 產品草圖 / 概念插畫',desc:'人物速寫、產品草圖與概念插畫，展現設計思維與手感表達能力。',tags:['手繪','插畫'], images: []},
+  {id:'sketch',cat:'product',subcat:'sketch',title:'手繪作品',short:'人物速寫 / 產品草圖 / 概念插畫',desc:'人物速寫、產品草圖與概念插畫，展現設計思維與手感表達能力。',tags:['手繪','插畫'], images: ['/繪圖.jpg']},
   {id:'tws_card',cat:'packaging',subcat:'ce',title:'TWS 紙卡內襯設計',short:'TWS 耳機紙卡內襯方案總覽',desc:'針對 TWS 耳機系列開發紙卡內襯，彙整多種結構選項，形成模組化設計資料庫。',tags:['包裝設計','TWS','紙卡'], images: ['/TWS 紙卡內襯設計01.png', '/TWS 紙卡內襯設計02.png', '/TWS 紙卡內襯設計03.png', '/TWS 紙卡內襯設計04.png', '/TWS 紙卡內襯設計05.png', '/TWS 紙卡內襯設計06.png', '/TWS 紙卡內襯設計07.png', '/TWS 紙卡內襯設計08.png', '/TWS 紙卡內襯設計09.png', '/TWS 紙卡內襯設計10.png', '/TWS 紙卡內襯設計11.png', '/TWS 紙卡內襯設計12.png']},
   {id:'tws_pkg',cat:'packaging',subcat:'ce',title:'TWS 包裝設計',short:'TWS 耳機完整包裝設計',desc:'為國際品牌 TWS 耳機設計完整包材，包含外箱、內裝結構與印刷規格。',tags:['包裝設計','消費電子'], images: ['/TWS 包裝設計01.jpg', '/TWS 包裝設計02.jpg']},
   {id:'hdt_card',cat:'packaging',subcat:'ce',title:'HDT 紙卡內襯設計',short:'電競耳機包裝結構方案',desc:'HDT 電競耳機紙卡內襯設計，提出多選項比較方案，支援 RFQ 提案決策。',tags:['包裝設計','HDT'], images: ['/HDT 紙卡內襯設計01.jpg', '/HDT 紙卡內襯設計02.jpg', '/HDT 紙卡內襯設計03.jpg', '/HDT 紙卡內襯設計04.jpg', '/HDT 紙卡內襯設計05.jpg', '/HDT 紙卡內襯設計06.jpg', '/HDT 紙卡內襯設計07.jpg', '/HDT 紙卡內襯設計08.jpg', '/HDT 紙卡內襯設計09.jpg', '/HDT 紙卡內襯設計10.jpg', '/HDT 紙卡內襯設計11.jpg', '/HDT 紙卡內襯設計12.jpg', '/HDT 紙卡內襯設計13.jpg', '/HDT 紙卡內襯設計14.jpg']},
@@ -106,7 +106,7 @@ const COURSES = [
   },
   {
     cat: 'ai', 
-    title:'AI 應用實務系列（NUVA）',
+    title:'AI 應用實務系列課程(NUVA)',
     sub:'ChatGPT LV.1 & MAKE LV.1',
     org:'NUVA',
     date:'2025.03 – 2025.04',
@@ -133,9 +133,20 @@ const COURSES = [
     org:'中國生產力中心 China Productivity Center',
     date:'2026.04.26',
     hours:'48 小時',
-    desc:'系統化學習 AI 導入、規劃與應用情境建構，強化跨領域數位工具整合能力。',
+    desc:'系統化學習 AI 導入、規劃與應用情境建構，強化跨領域數位工具整合能力。（正在培訓中，尚未取得證書）',
     outcomes: ['AI 應用場景規劃', '數位轉型策略制定', 'AI 工具鏈整合', '證照考試重點解析'],
-    images: ['/iPAS AI應用規劃師初級能力培訓班.jpg', '/iPAS AI應用規劃師初級證照班課程_ccchen.jpg']
+    images: ['/iPAS AI應用規劃師初級證照班課程_ccchen.jpg']
+  },
+  {
+    cat: 'ai', 
+    title:'iPAS AI應用規劃師初級能力培訓班',
+    sub:'',
+    org:'經濟部商業發展署',
+    date:'2026.03.22',
+    hours:'15 小時',
+    desc:'學習 AI 基礎應用與規劃，掌握商業場景下的 AI 導入實務。',
+    outcomes: ['AI 基礎概論', '商業應用場景分析', 'AI 規劃實務', '案例研究'],
+    images: ['/iPAS AI應用規劃師初級能力培訓班.jpg']
   }
 ];
 
@@ -149,7 +160,7 @@ const EXP_DATA = [
   {
     role:'包裝工程師', co:'美律實業股份有限公司', period:'2022/7～2025/05・2年11個月',
     loc:'台中市南屯區・精密儀器相關製造業 500人以上',
-    logo: '/MERRY_LOGO.png',
+    logo: '/MERRY_LOGO.jpg',
     duties:['消費性電子產品包裝開發工作、包裝相關提案與結構設計','新機型產品包材圖面繪製、包裝作業流程製作','包裝廠商樣品追蹤、品質問題改善確認'],
     results:[
       '國際品牌 TWS / HDT / Soundbar 包裝設計提案（共 25 件）',
@@ -796,7 +807,7 @@ export default function App() {
               { name: 'Illustrator', logo: '/ILLUSTRATOR_LOGO.jpg' },
               { name: 'Photoshop', logo: '/Photoshop-Logo-2015.jpg' },
               { name: 'InDesign', logo: '/Adobe_InDesign_logo.png' },
-              { name: 'AutoCAD', logo: '/autocad_LOGO.jpg' }
+              { name: 'AutoCAD', logo: '/autocad_LOGO-1.jpg' }
             ].map((t, i) => (
               <div key={i} className="flex items-center gap-2.5 p-2 rounded-lg border-2 border-[#e9ecef] bg-white hover:border-[#3d7a5a] transition-colors">
                 <div className="w-8 h-8 rounded bg-white flex items-center justify-center shrink-0 border border-[#e9ecef] overflow-hidden relative group">
@@ -922,7 +933,7 @@ export default function App() {
           </div>
         )}
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {filteredProjects.length > 0 ? (
             filteredProjects.map((p) => {
               return (
@@ -932,7 +943,7 @@ export default function App() {
                   whileHover={{ y: -4, shadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)" }}
                   className="rounded-xl overflow-hidden border-2 border-[#e9ecef] transition-all cursor-pointer hover:border-[#3d7a5a] flex flex-col bg-white"
                 >
-                  <div className="h-[180px] sm:h-[200px] overflow-hidden bg-white flex items-center justify-center relative group">
+                  <div className="h-[200px] sm:h-[240px] overflow-hidden bg-white flex items-center justify-center relative group">
                     {p.images && p.images.length > 0 ? (
                       <img 
                         src={p.images[0]} 
@@ -978,27 +989,6 @@ export default function App() {
   const renderCourses = () => {
     return (
       <div>
-        <div className="relative mb-6">
-          <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none text-[#adb5bd]">
-            <Search size={16} />
-          </div>
-          <input 
-            type="text"
-            placeholder="搜尋課程名稱、機構或學習重點..."
-            value={courseSearch}
-            onChange={(e) => setCourseSearch(e.target.value)}
-            className="w-full bg-[#f8f9fa] border-2 border-[#e9ecef] rounded-xl py-2.5 pl-10 pr-4 text-sm focus:border-[#3d7a5a] focus:outline-none transition-all placeholder:text-[#ced4da]"
-          />
-          {courseSearch && (
-            <button 
-              onClick={() => setCourseSearch('')}
-              className="absolute inset-y-0 right-3 flex items-center text-[#adb5bd] hover:text-[#343a40]"
-            >
-              <X size={16} />
-            </button>
-          )}
-        </div>
-
         <div className="flex gap-2 mb-5 flex-wrap">
           {Object.entries(COURSE_CATS).map(([key, cat]) => {
             const Icon = cat.icon;
@@ -1036,9 +1026,9 @@ export default function App() {
                     className="p-4 cursor-pointer flex flex-col sm:flex-row sm:items-center gap-4"
                     onClick={() => setExpandedCourse(isExpanded ? null : i)}
                   >
-                    <div className="w-full sm:w-32 h-20 shrink-0 bg-white rounded-lg flex items-center justify-center text-xl border border-[#e9ecef] overflow-hidden">
+                    <div className="w-full sm:w-80 h-48 shrink-0 bg-white rounded-lg flex items-center justify-center text-xl border border-[#e9ecef] overflow-hidden">
                       {c.images && c.images.length > 0 ? (
-                        <img src={c.images[0]} alt={c.title} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                        <img src={c.images[0]} alt={c.title} className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" />
                       ) : (
                         <span className="text-[10px] font-semibold text-[#adb5bd]">暫無圖片</span>
                       )}
@@ -1096,10 +1086,10 @@ export default function App() {
                             {c.outcomes && c.outcomes.length > 0 && (
                               <div>
                                 <div className="text-[11px] font-bold text-[#adb5bd] uppercase tracking-wider mb-2">學習重點與模組</div>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
                                   {c.outcomes.map((outcome, idx) => (
-                                    <div key={idx} className="flex items-start gap-2 p-2 rounded-lg bg-white border border-[#e9ecef]">
-                                      <div className="w-5 h-5 rounded-full bg-[#e8f5ee] text-[#3d7a5a] flex items-center justify-center shrink-0 mt-0.5">
+                                    <div key={idx} className="flex items-center gap-2 p-2 rounded-lg bg-white border border-[#e9ecef]">
+                                      <div className="w-5 h-5 rounded-full bg-[#e8f5ee] text-[#3d7a5a] flex items-center justify-center shrink-0">
                                         <Check size={10} strokeWidth={3} />
                                       </div>
                                       <span className="text-[11px] text-[#495057] font-medium leading-tight">{outcome}</span>
@@ -1155,12 +1145,13 @@ export default function App() {
         return (
           <motion.div 
             key={i} 
+            onClick={() => setLightboxProj({ id: int.id, title: int.title, desc: int.desc, images: int.image ? [int.image] : [], tags: int.emojis, cat: 'interest', short: int.goal } as any)}
             whileHover={{ y: -4, shadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)" }}
-            className="border-2 border-[#e9ecef] rounded-xl overflow-hidden transition-all hover:border-[#3d7a5a] flex flex-col bg-white"
+            className="border-2 border-[#e9ecef] rounded-xl overflow-hidden transition-all hover:border-[#3d7a5a] flex flex-col bg-white cursor-pointer"
           >
             <div className="h-[280px] bg-white flex items-center justify-center text-4xl relative overflow-hidden">
               {int.image ? (
-                <img src={int.image} alt={int.title} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                <img src={int.image} alt={int.title} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" referrerPolicy="no-referrer" />
               ) : (
                 int.emojis[0]
               )}
@@ -1196,10 +1187,10 @@ export default function App() {
     <div className="min-h-screen bg-[#f1f3f5] text-[#343a40] font-sans">
       {/* Top Sticky Navigation */}
       <header className="sticky top-0 z-40 bg-white border-b-2 border-[#e9ecef] shadow-sm">
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-8">
+        <div className="max-w-[2100px] mx-auto px-4 sm:px-8">
           <div className="flex flex-col lg:flex-row gap-6 justify-center">
             <div className="hidden lg:block w-[280px] shrink-0"></div>
-            <div className="w-full lg:max-w-[800px] flex-1 flex md:justify-center">
+            <div className="w-full lg:max-w-[1200px] flex-1 flex md:justify-center">
               <nav className="flex overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                 {TABS.map(tab => {
                   const Icon = tab.icon;
@@ -1229,13 +1220,22 @@ export default function App() {
         </div>
       </header>
 
-      <div className="flex flex-col lg:flex-row gap-6 max-w-[1400px] mx-auto w-full items-start p-4 sm:p-8 justify-center">
+      <div className="flex flex-col lg:flex-row gap-6 max-w-[2100px] mx-auto w-full items-start p-4 sm:p-8 justify-center">
         
         {/* Sidebar */}
         <aside className="w-full lg:w-[280px] shrink-0 bg-white rounded-2xl shadow-sm p-7 lg:sticky lg:top-24">
-          <div className="w-[100px] h-[100px] rounded-full bg-[#f1f3f5] mx-auto mb-3.5 overflow-hidden border-[3px] border-[#e8f5ee] flex items-center justify-center">
+          <motion.div 
+            whileHover={{ 
+              scale: 1.1, 
+              rotate: [0, -5, 5, -5, 5, 0],
+              transition: { duration: 0.5 }
+            }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="w-[120px] h-[120px] rounded-full bg-[#f1f3f5] mx-auto mb-4 overflow-hidden border-[4px] border-[#e8f5ee] flex items-center justify-center cursor-default shadow-md z-10 relative"
+          >
             <AvatarSVG />
-          </div>
+          </motion.div>
+          
           <h1 className="text-center text-[1.2rem] font-bold">賴以婕 Amanda</h1>
           <p className="text-center text-[#6c757d] text-[0.82rem] mt-1">工業設計師 / 包裝工程師</p>
           <div className="flex items-center justify-center gap-1 text-[#adb5bd] text-[0.78rem] mt-2 mb-4">
@@ -1271,7 +1271,7 @@ export default function App() {
         </aside>
         
         {/* Content */}
-        <main className="flex-1 w-full lg:max-w-[800px] bg-white rounded-2xl shadow-sm overflow-hidden">
+        <main className="flex-1 w-full lg:max-w-[1200px] bg-white rounded-2xl shadow-sm overflow-hidden">
           {/* Panels */}
           <div className="p-5 sm:p-8 min-h-[500px]">
             <AnimatePresence mode="wait">
@@ -1305,7 +1305,7 @@ export default function App() {
               initial={{ opacity: 0, scale: 0.95, y: 10 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 10 }}
-              className="bg-white rounded-2xl max-w-4xl w-full overflow-hidden flex flex-col max-h-[90vh]"
+              className="bg-white rounded-2xl max-w-6xl w-full overflow-hidden flex flex-col max-h-[90vh]"
             >
               <div className="flex items-center justify-between p-4 border-b border-[#e9ecef]">
                 <h2 className="text-[15px] font-bold">{lightboxProj ? lightboxProj.title : lightboxCourse.title}</h2>
@@ -1322,7 +1322,7 @@ export default function App() {
                   <div className="flex flex-col gap-6">
                     {lightboxProj.images && lightboxProj.images.length > 0 ? (
                       lightboxProj.images.map((img: string, idx: number) => (
-                        <div key={idx} className="w-full bg-white rounded-xl overflow-hidden flex justify-center p-2 sm:p-4 border border-[#e9ecef]">
+                        <div key={idx} className={`w-full bg-white rounded-xl overflow-hidden flex justify-center p-2 sm:p-4 border border-[#e9ecef] ${lightboxProj.cat === 'interest' ? 'max-w-[50%] mx-auto' : ''}`}>
                           <img 
                             src={img} 
                             alt={`${lightboxProj.title} - ${idx + 1}`} 
@@ -1367,8 +1367,8 @@ export default function App() {
                     </h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                       {lightboxCourse.outcomes.map((outcome: string, idx: number) => (
-                        <div key={idx} className="flex items-start gap-2 bg-[#f8f9fa] p-2 rounded-lg border border-[#e9ecef]">
-                          <div className="mt-1 w-1.5 h-1.5 rounded-full bg-[#3d7a5a] shrink-0" />
+                        <div key={idx} className="flex items-center gap-2 bg-[#f8f9fa] p-2 rounded-lg border border-[#e9ecef]">
+                          <div className="w-1.5 h-1.5 rounded-full bg-[#3d7a5a] shrink-0" />
                           <span className="text-[12px] leading-tight">{outcome}</span>
                         </div>
                       ))}
