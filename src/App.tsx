@@ -76,16 +76,16 @@ const PROJECTS = [
   {id:'medical',cat:'product',subcat:'medical',title:'醫療器材設計',short:'低頻治療儀 / 霧化器 / SPO2 手環',desc:'包含低周波治療器 2 款外觀提案、兒童用霧化器外觀提案及 SPO2 手環 5 款外觀提案，完成外觀造型、爆炸圖與量產工程規格文件。',tags:['醫療器材','工業設計'], images: []},
   {id:'toy',cat:'product',subcat:'toy',title:'玩具設計',short:'兒童益智玩具系列',desc:'兒童益智玩具系列設計，包含角色造型、結構拼組與安全材質規劃。',tags:['玩具設計','CMF'], images: []},
   {id:'sketch',cat:'product',subcat:'sketch',title:'手繪作品',short:'人物速寫 / 產品草圖 / 概念插畫',desc:'人物速寫、產品草圖與概念插畫，展現設計思維與手感表達能力。',tags:['手繪','插畫'], images: []},
-  {id:'tws_card',cat:'packaging',subcat:'ce',title:'TWS 紙卡內襯設計',short:'TWS 耳機紙卡內襯方案總覽',desc:'針對 TWS 耳機系列開發紙卡內襯，彙整多種結構選項，形成模組化設計資料庫。',tags:['包裝設計','TWS','紙卡'], images: []},
-  {id:'tws_pkg',cat:'packaging',subcat:'ce',title:'TWS 包裝設計',short:'TWS 耳機完整包裝設計',desc:'為國際品牌 TWS 耳機設計完整包材，包含外箱、內裝結構與印刷規格。',tags:['包裝設計','消費電子'], images: ['/TWS 包裝設計01.jpg', '/TWS 包裝設計02.jpg']},
+  {id:'tws_card',cat:'packaging',subcat:'ce',title:'TWS 紙卡內襯設計',short:'TWS 耳機紙卡內襯方案總覽',desc:'針對 TWS 耳機系列開發紙卡內襯，彙整多種結構選項，形成模組化設計資料庫。',tags:['包裝設計','TWS','紙卡'], images: ['/TWS 紙卡內襯設計01.png', '/TWS 紙卡內襯設計02.png', '/TWS 紙卡內襯設計03.png', '/TWS 紙卡內襯設計04.png', '/TWS 紙卡內襯設計05.png', '/TWS 紙卡內襯設計06.png', '/TWS 紙卡內襯設計07.png', '/TWS 紙卡內襯設計08.png', '/TWS 紙卡內襯設計09.png', '/TWS 紙卡內襯設計10.png', '/TWS 紙卡內襯設計11.png', '/TWS 紙卡內襯設計12.png']},
+  {id:'tws_pkg',cat:'packaging',subcat:'ce',title:'TWS 包裝設計',short:'TWS 耳機完整包裝設計',desc:'為國際品牌 TWS 耳機設計完整包材，包含外箱、內裝結構與印刷規格。',tags:['包裝設計','消費電子'], images: ['/TWS 包裝設計01.jpg', '/TWS 包裝設計01-1.jpg', '/TWS 包裝設計02.jpg', '/TWS 包裝設計02-1.jpg']},
   {id:'hdt_card',cat:'packaging',subcat:'ce',title:'HDT 紙卡內襯設計',short:'電競耳機包裝結構方案',desc:'HDT 電競耳機紙卡內襯設計，提出多選項比較方案，支援 RFQ 提案決策。',tags:['包裝設計','HDT'], images: []},
-  {id:'soundbar_card',cat:'packaging',subcat:'ce',title:'Soundbar 紙卡內襯設計',short:'Soundbar 包裝內構設計',desc:'Soundbar 紙卡內襯結構設計，考量產品尺寸與跌落保護需求。',tags:['包裝設計','Soundbar'], images: []},
-  {id:'soundbar_pkg',cat:'packaging',subcat:'ce',title:'Soundbar 設計',short:'Soundbar 整體包裝方案',desc:'Speaker Packaging Design，採用 Harvest Foam Dry-Pressed Pulp Tray，整合環保材質與品牌呈現。',tags:['包裝設計','永續','Soundbar'], images: []},
-  {id:'webcam',cat:'packaging',subcat:'ce',title:'視訊鏡頭包裝設計',short:'Webcam Packaging Design',desc:'視訊鏡頭包裝設計，採 Black Wet-Pressed Pulp Tray，兼顧防護與環保需求。',tags:['包裝設計','紙托'], images: []},
-  {id:'carrycase',cat:'packaging',subcat:'bike',title:'Carrycase 包袋設計',short:'收納包袋結構設計',desc:'自行車零件收納包袋設計，考量多 SKU 共用與模組化包裝平台。',tags:['包裝設計','自行車'], images: []},
-  {id:'mtb',cat:'packaging',subcat:'bike',title:'MTB Handle Bar 包裝設計',short:'MTB 車把手包裝設計',desc:'MTB 車把手三層瓦楞結構包裝，考量層板方案、正面紙板與包裝底座。',tags:['包裝設計','自行車','Handle Bar'], images: []},
-  {id:'tr',cat:'packaging',subcat:'bike',title:'TR Handle Bar 包裝設計',short:'TR 車把手包裝設計',desc:'TR Handle Bar 包裝結構設計，統整行李方案、正面紙板至包裝底座完整流程。',tags:['包裝設計','自行車'], images: []},
-  {id:'ra',cat:'packaging',subcat:'bike',title:'RA Handle Bar 包裝設計',short:'RA 車把手包裝設計',desc:'RA Handle Bar 系列包裝設計，涵蓋運輸、展示與量產導入規格。',tags:['包裝設計','自行車'], images: []},
+  {id:'soundbar_card',cat:'packaging',subcat:'ce',title:'Soundbar 紙卡內襯設計',short:'Soundbar 包裝內構設計',desc:'Soundbar 紙卡內襯結構設計，考量產品尺寸與跌落保護需求。',tags:['包裝設計','Soundbar'], images: ['/Soundbar 紙卡內襯設計01.png', '/Soundbar 紙卡內襯設計02.png', '/Soundbar 紙卡內襯設計03.png', '/Soundbar 紙卡內襯設計04.jpg', '/Soundbar 紙卡內襯設計05.jpg', '/Soundbar 紙卡內襯設計06.jpg', '/Soundbar 紙卡內襯設計07.jpg', '/Soundbar 紙卡內襯設計08.jpg']},
+  {id:'soundbar_pkg',cat:'packaging',subcat:'ce',title:'Soundbar 設計',short:'Soundbar 整體包裝方案',desc:'Speaker Packaging Design，採用 Harvest Foam Dry-Pressed Pulp Tray，整合環保材質與品牌呈現。',tags:['包裝設計','永續','Soundbar'], images: ['/Soundbar 設計01.jpg']},
+  {id:'webcam',cat:'packaging',subcat:'ce',title:'視訊鏡頭包裝設計',short:'Webcam Packaging Design',desc:'視訊鏡頭包裝設計，採 Black Wet-Pressed Pulp Tray，兼顧防護與環保需求。',tags:['包裝設計','紙托'], images: ['/視訊鏡頭包裝設計001.jpg', '/視訊鏡頭包裝設計002.jpg']},
+  {id:'carrycase',cat:'packaging',subcat:'bike',title:'Carrycase 包袋設計',short:'收納包袋結構設計',desc:'自行車零件收納包袋設計，考量多 SKU 共用與模組化包裝平台。',tags:['包裝設計','自行車'], images: ['/Carrycase 包袋設計01.jpg']},
+  {id:'mtb',cat:'packaging',subcat:'bike',title:'MTB Handle Bar 包裝設計',short:'MTB 車把手包裝設計',desc:'MTB 車把手三層瓦楞結構包裝，考量層板方案、正面紙板與包裝底座。',tags:['包裝設計','自行車','Handle Bar'], images: ['/MTB Handle Bar 包裝設計01.jpg', '/MTB Handle Bar 包裝設計02.jpg', '/MTB Handle Bar 包裝設計03.jpg', '/MTB Handle Bar 包裝設計04.png', '/MTB Handle Bar 包裝設計05.png', '/MTB Handle Bar 包裝設計06.png']},
+  {id:'tr',cat:'packaging',subcat:'bike',title:'TR Handle Bar 包裝設計',short:'TR 車把手包裝設計',desc:'TR Handle Bar 包裝結構設計，統整行李方案、正面紙板至包裝底座完整流程。',tags:['包裝設計','自行車'], images: ['/TR Handle Bar 包裝設計01.jpg', '/TR Handle Bar 包裝設計02.jpg', '/TR Handle Bar 包裝設計03.jpg', '/TR Handle Bar 包裝設計04.jpg', '/TR Handle Bar 包裝設計05.jpg', '/TR Handle Bar 包裝設計06.png', '/TR Handle Bar 包裝設計07.png', '/TR Handle Bar 包裝設計08.png']},
+  {id:'ra',cat:'packaging',subcat:'bike',title:'RA Handle Bar 包裝設計',short:'RA 車把手包裝設計',desc:'RA Handle Bar 系列包裝設計，涵蓋運輸、展示與量產導入規格。',tags:['包裝設計','自行車'], images: ['/RA Handle Bar 包裝設計01.png', '/RA Handle Bar 包裝設計02.png', '/RA Handle Bar 包裝設計03.png', '/RA Handle Bar 包裝設計04.png', '/RA Handle Bar 包裝設計05.png', '/RA Handle Bar 包裝設計06.png', '/RA Handle Bar 包裝設計06-1.png', '/RA Handle Bar 包裝設計07.png', '/RA Handle Bar 包裝設計07-1.png']},
   {id:'seatpost',cat:'packaging',subcat:'bike',title:'座管 包裝設計',short:'座管包裝結構設計',desc:'自行車座管包裝結構設計，針對細長零件開發全紙質緩衝方案。',tags:['包裝設計','自行車','減塑'], images: []},
   {id:'steerer',cat:'packaging',subcat:'bike',title:'立管 包裝設計',short:'立管包裝結構設計',desc:'立管包裝設計，開發輕量化、可回收包材方案。',tags:['包裝設計','自行車'], images: []},
   {id:'quickrelease',cat:'packaging',subcat:'bike',title:'快拆束仔 包裝設計',short:'快拆束仔包裝設計',desc:'快拆束仔小零件包裝設計，兼顧防護性與零售展示需求。',tags:['包裝設計','自行車'], images: []},
@@ -131,7 +131,8 @@ const COURSES = [
     date:'2026.04.26',
     hours:'48 小時',
     desc:'系統化學習 AI 導入、規劃與應用情境建構，強化跨領域數位工具整合能力。',
-    outcomes: ['AI 應用場景規劃', '數位轉型策略制定', 'AI 工具鏈整合', '證照考試重點解析']
+    outcomes: ['AI 應用場景規劃', '數位轉型策略制定', 'AI 工具鏈整合', '證照考試重點解析'],
+    image: '/iPAS AI應用規劃師初級能力培訓班.jpg'
   }
 ];
 
@@ -1315,8 +1316,20 @@ export default function App() {
                   </div>
                 )}
                 {lightboxCourse && (
-                  <div className="p-8 text-center h-[300px] flex items-center justify-center bg-[#f1f3f5] rounded-lg text-[#adb5bd] font-semibold">
-                    尚未上傳照片
+                  <div className="flex flex-col gap-6">
+                    {lightboxCourse.image ? (
+                      <div className="w-full bg-white rounded-xl overflow-hidden flex justify-center p-2 sm:p-4 border border-[#e9ecef]">
+                        <img 
+                          src={lightboxCourse.image} 
+                          alt={lightboxCourse.title} 
+                          className="max-w-full h-auto object-contain block shadow-sm rounded-lg" 
+                        />
+                      </div>
+                    ) : (
+                      <div className="p-8 text-center h-[300px] flex items-center justify-center bg-white rounded-lg text-[#adb5bd] font-semibold border-2 border-dashed border-[#dee2e6]">
+                        尚未上傳照片
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
