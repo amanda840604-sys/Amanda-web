@@ -221,7 +221,7 @@ const ProjectPlaceholder = ({ id, cat }: { id: string, cat: string }) => {
   const Icon = cat === 'packaging' ? Package : cat === 'product' ? Box : PenTool;
   
   return (
-    <div className="w-full h-full bg-[#f8f9fa] flex flex-col items-center justify-center gap-3 p-6 select-none">
+    <div className="w-full h-full bg-white flex flex-col items-center justify-center gap-3 p-6 select-none">
       <div className="w-16 h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center text-[#dee2e6]">
         <Icon size={32} strokeWidth={1.5} />
       </div>
@@ -917,7 +917,7 @@ export default function App() {
                   whileHover={{ y: -4, shadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)" }}
                   className="rounded-xl overflow-hidden border-2 border-[#e9ecef] transition-all cursor-pointer hover:border-[#3d7a5a] flex flex-col bg-white"
                 >
-                  <div className="h-[180px] sm:h-[200px] overflow-hidden bg-[#f8f9fa] flex items-center justify-center relative group">
+                  <div className="h-[180px] sm:h-[200px] overflow-hidden bg-white flex items-center justify-center relative group">
                     {p.images && p.images.length > 0 ? (
                       <img 
                         src={p.images[0]} 
@@ -1299,7 +1299,7 @@ export default function App() {
                   <div className="flex flex-col gap-6">
                     {lightboxProj.images && lightboxProj.images.length > 0 ? (
                       lightboxProj.images.map((img: string, idx: number) => (
-                        <div key={idx} className="w-full bg-[#f8f9fa] rounded-xl overflow-hidden flex justify-center p-2 sm:p-4 border border-[#e9ecef]">
+                        <div key={idx} className="w-full bg-white rounded-xl overflow-hidden flex justify-center p-2 sm:p-4 border border-[#e9ecef]">
                           <img 
                             src={img} 
                             alt={`${lightboxProj.title} - ${idx + 1}`} 
