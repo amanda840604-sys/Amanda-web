@@ -228,7 +228,7 @@ const AvatarSVG = () => (
     alt="賴以婕 Amanda" 
     className="w-full h-full object-cover"
     referrerPolicy="no-referrer"
-  />
+  onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlMmU4ZjAiLz48L3N2Zz4=' }} />
 );
 
 const ProjectPlaceholder = ({ id, cat }: { id: string, cat: string }) => {
@@ -609,7 +609,7 @@ export default function App() {
                 <div className="w-10 flex justify-center shrink-0">
                   <div className="w-10 h-10 rounded-lg bg-white border border-[#e9ecef] shrink-0 flex items-center justify-center overflow-hidden relative group">
                     {exp.logo ? (
-                      <img src={exp.logo} alt={exp.co} className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" />
+                      <img src={exp.logo} alt={exp.co} className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlMmU4ZjAiLz48L3N2Zz4=' }} />
                     ) : (
                       <span className="text-[10px] font-semibold text-[#adb5bd]">LOGO</span>
                     )}
@@ -693,7 +693,7 @@ export default function App() {
           <div className="flex gap-3 items-center">
             <div className="w-10 flex justify-center shrink-0">
               <div className="w-10 h-10 rounded-lg bg-white border border-[#e9ecef] shrink-0 flex items-center justify-center overflow-hidden relative group">
-                <img src='./images/ntust-logo.png' alt="國立臺灣科技大學" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" />
+                <img src='./images/ntust-logo.png' alt="國立臺灣科技大學" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlMmU4ZjAiLz48L3N2Zz4=' }} />
               </div>
             </div>
             <div>
@@ -704,7 +704,7 @@ export default function App() {
           <div className="flex gap-3 items-center">
             <div className="w-10 flex justify-center shrink-0">
               <div className="w-10 h-10 rounded-lg bg-white border border-[#e9ecef] shrink-0 flex items-center justify-center overflow-hidden relative group">
-                <img src='./images/tcivs-logo.jpg' alt="國立台中高工" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" />
+                <img src='./images/tcivs-logo.jpg' alt="國立台中高工" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlMmU4ZjAiLz48L3N2Zz4=' }} />
               </div>
             </div>
             <div>
@@ -811,7 +811,7 @@ export default function App() {
             ].map((t, i) => (
               <div key={i} className="flex items-center gap-2.5 p-2 rounded-lg border-2 border-[#e9ecef] bg-white hover:border-[#3d7a5a] transition-colors">
                 <div className="w-8 h-8 rounded bg-white flex items-center justify-center shrink-0 border border-[#e9ecef] overflow-hidden relative group">
-                  <img src={t.logo} alt={t.name} className="w-full h-full object-contain p-0.5" referrerPolicy="no-referrer" />
+                  <img src={t.logo} alt={t.name} className="w-full h-full object-contain p-0.5" referrerPolicy="no-referrer" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlMmU4ZjAiLz48L3N2Zz4=' }} />
                 </div>
                 <span className="text-sm font-semibold text-[#343a40]">{t.name}</span>
               </div>
@@ -950,7 +950,7 @@ export default function App() {
                         alt={p.title} 
                         className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110" 
                         loading="lazy"
-                      />
+                      onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlMmU4ZjAiLz48L3N2Zz4=' }} />
                     ) : (
                       <ProjectPlaceholder id={p.id} cat={p.cat} />
                     )}
@@ -1028,7 +1028,7 @@ export default function App() {
                   >
                     <div className="w-full sm:w-80 h-48 shrink-0 bg-white rounded-lg flex items-center justify-center text-xl border border-[#e9ecef] overflow-hidden">
                       {c.images && c.images.length > 0 ? (
-                        <img src={c.images[0]} alt={c.title} className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" />
+                        <img src={c.images[0]} alt={c.title} className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlMmU4ZjAiLz48L3N2Zz4=' }} />
                       ) : (
                         <span className="text-[10px] font-semibold text-[#adb5bd]">暫無圖片</span>
                       )}
@@ -1151,7 +1151,7 @@ export default function App() {
           >
             <div className="h-[280px] bg-white flex items-center justify-center text-4xl relative overflow-hidden">
               {int.image ? (
-                <img src={int.image} alt={int.title} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" referrerPolicy="no-referrer" />
+                <img src={int.image} alt={int.title} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" referrerPolicy="no-referrer" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlMmU4ZjAiLz48L3N2Zz4=' }} />
               ) : (
                 int.emojis[0]
               )}
@@ -1327,7 +1327,7 @@ export default function App() {
                             src={img} 
                             alt={`${lightboxProj.title} - ${idx + 1}`} 
                             className="max-w-full h-auto object-contain block shadow-sm rounded-lg" 
-                          />
+                          onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlMmU4ZjAiLz48L3N2Zz4=' }} />
                         </div>
                       ))
                     ) : (
@@ -1346,7 +1346,7 @@ export default function App() {
                             src={img} 
                             alt={`${lightboxCourse.title} - ${idx + 1}`} 
                             className="max-w-full h-auto object-contain block shadow-sm rounded-lg" 
-                          />
+                          onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlMmU4ZjAiLz48L3N2Zz4=' }} />
                         </div>
                       ))
                     ) : (
