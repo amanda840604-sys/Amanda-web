@@ -160,7 +160,7 @@ const EXP_DATA = [
   {
     role:'包裝工程師', co:'美律實業股份有限公司', period:'2022/7～2025/05・2年11個月',
     loc:'台中市南屯區・精密儀器相關製造業 500人以上',
-    logo: '/MERRY_LOGO.jpg',
+    logo: '/merry-logo.jpg',
     duties:['消費性電子產品包裝開發工作、包裝相關提案與結構設計','新機型產品包材圖面繪製、包裝作業流程製作','包裝廠商樣品追蹤、品質問題改善確認'],
     results:[
       '國際品牌 TWS / HDT / Soundbar 包裝設計提案（共 25 件）',
@@ -172,7 +172,7 @@ const EXP_DATA = [
   {
     role:'產品設計師', co:'台灣櫻花股份有限公司', period:'2020/3～2022/7・2年5個月',
     loc:'台中市大雅區・非金屬家具及裝設品製造業 500人以上',
-    logo: '/SAKURA_LOGO.png',
+    logo: '/sakura-logo.png',
     duties:['針對 PM 市場規劃結合消費者調查結果擬定設計方向','跨部門協作經驗','國內外廚電市場與造型趨勢調研'],
     results:[
       '2021 年度績優員工',
@@ -184,7 +184,7 @@ const EXP_DATA = [
   {
     role:'產品設計師', co:'上岳科技股份有限公司', period:'2018/11～2019/12・1年2個月',
     loc:'台中市南屯區・醫療器材製造業 30–100人',
-    logo: '/EMG_LOGO.png',
+    logo: '/emg-logo.png',
     duties:['新品提案與簡報製作','依據 RD 提供模組進行產品設計提案，含視覺、材質規劃與造型風格定調','產品造型設計'],
     results:[
       '低周波治療器 2 款外觀提案',
@@ -801,13 +801,13 @@ export default function App() {
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8 pl-[52px]">
             {[
-              { name: 'SolidWorks', logo: '/solidworks_LOGO.jpg' },
-              { name: 'Creo', logo: '/creo_LOGO.png' },
+              { name: 'SolidWorks', logo: '/solidworks-logo.jpg' },
+              { name: 'Creo', logo: '/creo-logo.png' },
               { name: 'KeyShot', logo: '/keyshot-logo.jpg' },
-              { name: 'Illustrator', logo: '/ILLUSTRATOR_LOGO.jpg' },
-              { name: 'Photoshop', logo: '/Photoshop-Logo-2015.jpg' },
-              { name: 'InDesign', logo: '/Adobe_InDesign_logo.png' },
-              { name: 'AutoCAD', logo: '/autocad_LOGO-1.jpg' }
+              { name: 'Illustrator', logo: '/illustrator-logo.jpg' },
+              { name: 'Photoshop', logo: '/photoshop-logo-2015.jpg' },
+              { name: 'InDesign', logo: '/adobe-indesign-logo.png' },
+              { name: 'AutoCAD', logo: '/autocad-logo-1.jpg' }
             ].map((t, i) => (
               <div key={i} className="flex items-center gap-2.5 p-2 rounded-lg border-2 border-[#e9ecef] bg-white hover:border-[#3d7a5a] transition-colors">
                 <div className="w-8 h-8 rounded bg-white flex items-center justify-center shrink-0 border border-[#e9ecef] overflow-hidden relative group">
