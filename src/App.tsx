@@ -196,7 +196,7 @@ const EXP_DATA = [
   {
     role:'產品設計師', co:'研成股份有限公司', period:'2017/8～2018/8・1年1個月',
     loc:'新北市新店區・專門設計相關業 30–100人',
-    logo: 'https://cdn.phototourl.com/free/2026-04-16-3c7c3c6f-8f26-4ba1-bb81-72c7c9132ab6.png',
+    logo: '/cic-logo.png',
     duties:['新品提案與簡報製作','依據 RD 提供模組進行產品設計提案','產品造型設計'],
     results:[
       '獨立負責日本學研 GAKKEN 委託之鋁製品設計案',
@@ -806,8 +806,8 @@ export default function App() {
               { name: 'KeyShot', logo: '/keyshot-logo.jpg' },
               { name: 'Illustrator', logo: '/illustrator-logo.jpg' },
               { name: 'Photoshop', logo: '/photoshop-logo-2015.jpg' },
-              { name: 'InDesign', logo: 'https://cdn.phototourl.com/free/2026-04-16-e41631ce-7792-47b0-8959-79877c7f5f44.png' },
-              { name: 'AutoCAD', logo: 'https://cdn.phototourl.com/free/2026-04-16-834536ba-9e47-411e-aaf9-de3033cafa8f.jpg' }
+              { name: 'InDesign', logo: '/adobe-indesign-logo.png' },
+              { name: 'AutoCAD', logo: '/autocad-logo-1.jpg' }
             ].map((t, i) => (
               <div key={i} className="flex items-center gap-2.5 p-2 rounded-lg border-2 border-[#e9ecef] bg-white hover:border-[#3d7a5a] transition-colors">
                 <div className="w-8 h-8 rounded bg-white flex items-center justify-center shrink-0 border border-[#e9ecef] overflow-hidden relative group">
