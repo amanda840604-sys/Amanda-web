@@ -15,137 +15,137 @@ import {
 import { motion, AnimatePresence } from 'motion/react';
 
 const CATS = {
-  all: { label: 'All', icon: LayoutGrid },
-  packaging: { label: 'Packaging', icon: Package },
-  product: { label: 'Product', icon: Box },
-  graphic: { label: 'Graphic', icon: PenTool }
+  all: { label: '全部', icon: LayoutGrid },
+  packaging: { label: '包裝設計', icon: Package },
+  product: { label: '產品設計', icon: Box },
+  graphic: { label: '平面設計', icon: PenTool }
 };
 
 const INITIAL_SKILLS = [
   { 
     id: 1,
-    title: 'Market Research & Positioning Analysis', 
+    title: '市場調研與定位分析', 
     icon: 'Search', 
-    desc: 'Expert in competitive research and brand positioning analysis to define design directions.', 
-    subSkills: ['Competitive Analysis', 'Product Strategy', 'Product Positioning', 'Market Data Analysis', 'Proposal Writing'],
+    desc: '擅長設計前期的競品蒐集並針對該品牌定位分析，總結設計規畫方向。', 
+    subSkills: ['競品分析', '產品策略', '產品定位', '市場調查資料分析', '報告撰寫與提案'],
     tags: ['Market Research', 'Strategy'],
     level: 5
   },
   { 
     id: 2,
-    title: '2D Brand Visual Integration & Presentation', 
+    title: '2D 品牌視覺整合與簡報提案', 
     icon: 'Palette', 
-    desc: 'Skilled in integrating packaging structure with brand identity to create professional proposals.', 
-    subSkills: ['Adobe InDesign', 'Illustrator', 'Photoshop', 'Layout Design', 'Print Knowledge', 'Pre-press Design'],
+    desc: '擅長整合包裝結構與品牌識別，製作具專業感與說服力的提案簡報。', 
+    subSkills: ['Adobe InDesign', 'Illustrator', 'Photoshop', '電腦排版設計', '設計印刷基本認知', '電腦印前設計'],
     tags: ['Graphic Design', 'Branding'],
     level: 4
   },
   { 
     id: 3,
-    title: '3D Modeling & Structural Simulation', 
+    title: '3D 建模與結構模擬', 
     icon: 'Cpu', 
-    desc: 'Capable of rapid 3D modeling and assembly simulation to bridge design and engineering.', 
-    subSkills: ['Creo', 'SolidWorks', 'Rhino', 'Keyshot', 'Structural Evaluation', '3D Rendering'],
+    desc: '能快速建構產品結構模型並進行裝配模擬，支援從設計構想至工程的溝通。', 
+    subSkills: ['Creo', 'SolidWorks', 'Rhino', 'Keyshot', '產品結構評估', '3D 渲染'],
     tags: ['3D Modeling', 'Engineering'],
     level: 5
   },
   { 
     id: 4,
-    title: 'Packaging Material Selection & BOM Creation', 
+    title: '包裝材料選用與 BOM 建立', 
     icon: 'ClipboardList', 
-    desc: 'Familiar with blister, corrugated, and pulp tray materials to propose optimized solutions.', 
-    subSkills: ['Corrugated Structure', 'Material Selection', 'Engineering Drawings', 'BOM Creation'],
+    desc: '熟悉泡殼、瓦楞紙卡、紙托等常用包材特性，依需求提出優化方案。', 
+    subSkills: ['瓦楞紙結構', '包裝材料選用', '工程圖繪製', 'BOM 建立'],
     tags: ['Packaging', 'BOM'],
     level: 4
   },
   { 
     id: 5,
-    title: 'Prototyping & Design Validation', 
+    title: '打樣實作與設計驗證能力', 
     icon: 'Hammer', 
-    desc: 'Proficient in using sample cutters for structural simulation and rapid prototyping.', 
-    subSkills: ['Sample Cutter Operation', 'Structural Simulation', 'Rapid Prototyping', 'Design Validation', 'CMF Sampling'],
+    desc: '善用割樣機進行結構模擬與快速打樣，快速驗證設計可行性。', 
+    subSkills: ['打樣機操作', '結構模擬', '快速打樣', '設計驗證', 'CMF 樣板製作'],
     tags: ['Prototyping', 'Validation'],
     level: 5
   }
 ];
 
 const PROJECTS = [
-  {id:'hood',cat:'product',subcat:'appliance',title:'Range Hood Design',short:'Slim Euro-style & Side-suction Series',desc:'Designed slim Euro-style (2020) and side-suction (2022) range hoods for SAKURA. Covered ID, CMF, engineering drawings, and mass production validation.',tags:['Product Design','Kitchen Appliance','SAKURA'], images: ['/hood_euro01.jpg', '/hood_euro02.jpg', '/hood_side_suction.jpg']},
-  {id:'gas',cat:'product',subcat:'appliance',title:'Gas Stove Design',short:'Built-in Gas Stove Industrial Design',desc:'Industrial design for built-in gas stoves, emphasizing HMI and safety structure integration. Completed CMF for knobs, grates, and glass panels.',tags:['Product Design','Home Appliance'], images: ['/stove_easy_clean.jpg']},
-  {id:'wearable',cat:'product',subcat:'medical',title:'Wearable Device Design',short:'Sleep Monitoring Smart Wristband',desc:'Sleep monitoring wristband design, integrating sensor modules and comfortable wearable structures. Completed CMF and exploded view output.',tags:['Wearable','Medical'], images: ['/wearable01.jpg', '/wearable02.jpg', '/wearable03.jpg', '/wearable04.jpg']},
-  {id:'medical',cat:'product',subcat:'medical',title:'Medical Equipment Design',short:'TENS / Nebulizer / SPO2 Wristband',desc:'Includes ID proposals for 2 TENS devices, a pediatric nebulizer, and 5 SPO2 wristbands. Completed ID, exploded views, and engineering specs.',tags:['Medical Device','Industrial Design'], images: ['/medical02.jpg']},
-  {id:'toy',cat:'product',subcat:'toy',title:'Toy Design',short:'Educational Toy Series',desc:'Educational toy series design, including character modeling, structural assembly, and safety material planning.',tags:['Toy Design','CMF'], images: ['/toy_design.jpg']},
-  {id:'sketch',cat:'product',subcat:'sketch',title:'Sketch Portfolio',short:'Figure Sketch / Product Sketch / Concept Art',desc:'Figure sketches, product sketches, and concept illustrations demonstrating design thinking and hand-drawing skills.',tags:['Sketch','Illustration'], images: ['/sketch.jpg']},
-  {id:'tws_card',cat:'packaging',subcat:'ce',title:'TWS Card Inner Design',short:'TWS Earphone Card Inner Solutions',desc:'Developed card inner structures for TWS earphone series, creating a modular design database.',tags:['Packaging Design','TWS','Cardboard'], images: ['/tws_card_inner01.png', '/tws_card_inner02.png', '/tws_card_inner03.png', '/tws_card_inner04.png', '/tws_card_inner05.png', '/tws_card_inner06.png', '/tws_card_inner07.png', '/tws_card_inner08.png', '/tws_card_inner09.png', '/tws_card_inner10.png', '/tws_card_inner11.png', '/tws_card_inner12.png']},
-  {id:'tws_pkg',cat:'packaging',subcat:'ce',title:'TWS Packaging Design',short:'Complete TWS Earphone Packaging',desc:'Designed complete packaging for international TWS brands, including outer boxes, inner structures, and printing specs.',tags:['Packaging Design','Consumer Electronics'], images: ['/tws_package_design01.jpg', '/tws_package_design02.jpg']},
-  {id:'hdt_card',cat:'packaging',subcat:'ce',title:'HDT Card Inner Design',short:'Gaming Headset Packaging Structures',desc:'HDT gaming headset card inner design, providing multiple comparison options for RFQ proposals.',tags:['Packaging Design','HDT'], images: ['/hdt_card01.jpg', '/hdt_card02.jpg', '/hdt_card03.jpg', '/hdt_card04.jpg', '/hdt_card05.jpg', '/hdt_card06.jpg', '/hdt_card07.jpg', '/hdt_card08.jpg', '/hdt_card09.jpg', '/hdt_card10.jpg', '/hdt_card11.jpg', '/hdt_card12.jpg', '/hdt_card13.jpg', '/hdt_card14.jpg']},
-  {id:'soundbar_card',cat:'packaging',subcat:'ce',title:'Soundbar Card Inner Design',short:'Soundbar Packaging Inner Structures',desc:'Soundbar card inner structural design, considering product dimensions and drop protection.',tags:['Packaging Design','Soundbar'], images: ['/soundbar_card_inner01.png', '/soundbar_card_inner02.png', '/soundbar_card_inner03.png', '/soundbar_card_inner04.jpg', '/soundbar_card_inner05.jpg', '/soundbar_card_inner06.jpg', '/soundbar_card_inner07.jpg', '/soundbar_card_inner08.jpg']},
-  {id:'soundbar_pkg',cat:'packaging',subcat:'ce',title:'Soundbar Packaging Design',short:'Soundbar Overall Packaging Solution',desc:'Speaker Packaging Design using Harvest Foam Dry-Pressed Pulp Tray, integrating eco-friendly materials.',tags:['Packaging Design','Sustainability','Soundbar'], images: ['/soundbar_design01.jpg']},
-  {id:'webcam',cat:'packaging',subcat:'ce',title:'Webcam Packaging Design',short:'Webcam Packaging Design',desc:'Webcam packaging design using Black Wet-Pressed Pulp Tray for protection and sustainability.',tags:['Packaging Design','Pulp Tray'], images: ['/webcam01.jpg', '/webcam02.jpg']},
-  {id:'carrycase',cat:'packaging',subcat:'bike',title:'Carrycase Bag Design',short:'Storage Bag Structural Design',desc:'Bicycle parts storage bag design, considering multi-SKU sharing and modular packaging platforms.',tags:['Packaging Design','Bicycle'], images: ['/carrycase01.jpg']},
-  {id:'mtb',cat:'packaging',subcat:'bike',title:'MTB Handle Bar Packaging',short:'MTB Handle Bar Packaging Design',desc:'MTB Handle Bar packaging design, including transport test validation and mass production specs.',tags:['Packaging Design','Bicycle','Handle Bar'], images: ['/mtb_handle_bar01.jpg', '/mtb_handle_bar02.jpg', '/mtb_handle_bar03.jpg', '/mtb_handle_bar04.png', '/mtb_handle_bar05.png', '/mtb_handle_bar06.png']},
-  {id:'tr',cat:'packaging',subcat:'bike',title:'TR Handle Bar Packaging',short:'TR Handle Bar Packaging Design',desc:'TR Handle Bar packaging structural design, from luggage solutions to base base integration.',tags:['Packaging Design','Bicycle'], images: ['/tr_handle_bar01.jpg', '/tr_handle_bar02.jpg', '/tr_handle_bar03.jpg', '/tr_handle_bar04.jpg', '/tr_handle_bar05.jpg', '/tr_handle_bar06.png', '/tr_handle_bar07.png', '/tr_handle_bar08.png']},
-  {id:'ra',cat:'packaging',subcat:'bike',title:'RA Handle Bar Packaging',short:'RA Handle Bar Packaging Design',desc:'RA Handle Bar series packaging design, covering transport, display, and production specs.',tags:['Packaging Design','Bicycle'], images: ['/ra_handle_bar01.png', '/ra_handle_bar02.png', '/ra_handle_bar03.png', '/ra_handle_bar04.png', '/ra_handle_bar05.png', '/ra_handle_bar06.png', '/ra_handle_bar07.png']},
-  {id:'seatpost',cat:'packaging',subcat:'bike',title:'Seatpost Packaging Design',short:'Seatpost Packaging Structural Design',desc:'Bicycle seatpost packaging design, developing all-paper cushioning for long parts.',tags:['Packaging Design','Bicycle','Plastic-free'], images: ['/seatpost01.jpg', '/seatpost02.jpg', '/seatpost03.jpg', '/seatpost04.jpg', '/seatpost05.jpg', '/seatpost06.jpg', '/seatpost07.jpg', '/seatpost08.jpg', '/seatpost09.jpg']},
-  {id:'steerer',cat:'packaging',subcat:'bike',title:'Steerer Packaging Design',short:'Steerer Packaging Structural Design',desc:'Steerer packaging design, developing lightweight and recyclable material solutions.',tags:['Packaging Design','Bicycle'], images: ['/steerer01.jpg', '/steerer02.jpg', '/steerer03.jpg', '/steerer04.jpg', '/steerer05.jpg']},
-  {id:'quickrelease',cat:'packaging',subcat:'bike',title:'Quick Release Packaging',short:'Quick Release Packaging Design',desc:'Small parts packaging design for quick release, balancing protection and retail display.',tags:['Packaging Design','Bicycle'], images: ['/quickrelease01.jpg', '/quickrelease02.jpg', '/quickrelease03.jpg', '/quickrelease04.jpg']},
-  {id:'graphic',cat:'graphic',subcat:'branding',title:'Graphic Design',short:'Branding CIS / Poster / Identity',desc:'Brand Visual Identity System (CIS), poster design, and corporate identity materials.',tags:['Branding','Graphic','CIS'], images: ['/poster_design.jpg']}
+  {id:'hood',cat:'product',subcat:'appliance',title:'油煙機設計',short:'薄化歐化油煙機、近吸油煙機系列',desc:'為 SAKURA 品牌設計薄化歐化油煙機（2020）及近吸油煙機（2022）、歐化油煙機（2021）系列。涵蓋外觀造型、CMF 規格、結構工程圖及量產驗證，兼顧空氣動力學效能與現代廚房美學。',tags:['產品設計','廚房家電','SAKURA'], images: ['/hood_euro01.jpg', '/hood_euro02.jpg', '/hood_side_suction.jpg']},
+  {id:'gas',cat:'product',subcat:'appliance',title:'瓦斯爐設計',short:'嵌入式瓦斯爐工業設計',desc:'嵌入式瓦斯爐工業設計，強調人因操作介面與安全結構整合，完成旋鈕、爐架與玻璃面板之 CMF 規格輸出。',tags:['產品設計','家電'], images: ['/stove_easy_clean.jpg']},
+  {id:'wearable',cat:'product',subcat:'medical',title:'穿戴式裝置設計',short:'睡眠監測智慧手環',desc:'睡眠監測智慧手環設計，整合感測模組與舒適穿戴結構，完成 CMF 規格及爆炸圖輸出。',tags:['穿戴裝置','醫療'], images: ['/wearable01.jpg', '/wearable02.jpg', '/wearable03.jpg', '/wearable04.jpg']},
+  {id:'medical',cat:'product',subcat:'medical',title:'醫療器材設計',short:'低頻治療儀 / 霧化器 / SPO2 手環',desc:'包含低周波治療器 2 款外觀提案、兒童用霧化器外觀提案及 SPO2 手環 5 款外觀提案，完成外觀造型、爆炸圖與量產工程規格文件。',tags:['醫療器材','工業設計'], images: ['/medical02.jpg']},
+  {id:'toy',cat:'product',subcat:'toy',title:'玩具設計',short:'兒童益智玩具系列',desc:'兒童益智玩具系列設計，包含角色造型、結構拼組與安全材質規劃。',tags:['玩具設計','CMF'], images: ['/toy_design.jpg']},
+  {id:'sketch',cat:'product',subcat:'sketch',title:'手繪作品',short:'人物速寫 / 產品草圖 / 概念插畫',desc:'人物速寫、產品草圖與概念插畫，展現設計思維與手感表達能力。',tags:['手繪','插畫'], images: ['/sketch.jpg']},
+  {id:'tws_card',cat:'packaging',subcat:'ce',title:'TWS 紙卡內襯設計',short:'TWS 耳機紙卡內襯方案總覽',desc:'針對 TWS 耳機系列開發紙卡內襯，彙整多種結構選項，形成模組化設計資料庫。',tags:['包裝設計','TWS','紙卡'], images: ['/tws_card_inner01.png', '/tws_card_inner02.png', '/tws_card_inner03.png', '/tws_card_inner04.png', '/tws_card_inner05.png', '/tws_card_inner06.png', '/tws_card_inner07.png', '/tws_card_inner08.png', '/tws_card_inner09.png', '/tws_card_inner10.png', '/tws_card_inner11.png', '/tws_card_inner12.png']},
+  {id:'tws_pkg',cat:'packaging',subcat:'ce',title:'TWS 包裝設計',short:'TWS 耳機完整包裝設計',desc:'為國際品牌 TWS 耳機設計完整包材，包含外箱、內裝結構與印刷規格。',tags:['包裝設計','消費電子'], images: ['/tws_package_design01.jpg', '/tws_package_design02.jpg']},
+  {id:'hdt_card',cat:'packaging',subcat:'ce',title:'HDT 紙卡內襯設計',short:'電競耳機包裝結構方案',desc:'HDT 電競耳機紙卡內襯設計，提出多選項比較方案，支援 RFQ 提案決策。',tags:['包裝設計','HDT'], images: ['/hdt_card01.jpg', '/hdt_card02.jpg', '/hdt_card03.jpg', '/hdt_card04.jpg', '/hdt_card05.jpg', '/hdt_card06.jpg', '/hdt_card07.jpg', '/hdt_card08.jpg', '/hdt_card09.jpg', '/hdt_card10.jpg', '/hdt_card11.jpg', '/hdt_card12.jpg', '/hdt_card13.jpg', '/hdt_card14.jpg']},
+  {id:'soundbar_card',cat:'packaging',subcat:'ce',title:'Soundbar 紙卡內襯設計',short:'Soundbar 包裝內構設計',desc:'Soundbar 紙卡內襯結構設計，考量產品尺寸與跌落保護需求。',tags:['包裝設計','Soundbar'], images: ['/soundbar_card_inner01.png', '/soundbar_card_inner02.png', '/soundbar_card_inner03.png', '/soundbar_card_inner04.jpg', '/soundbar_card_inner05.jpg', '/soundbar_card_inner06.jpg', '/soundbar_card_inner07.jpg', '/soundbar_card_inner08.jpg']},
+  {id:'soundbar_pkg',cat:'packaging',subcat:'ce',title:'Soundbar 設計',short:'Soundbar 整體包裝方案',desc:'Speaker Packaging Design，採用 Harvest Foam Dry-Pressed Pulp Tray，整合環保材質與品牌呈現。',tags:['包裝設計','永續','Soundbar'], images: ['/soundbar_design01.jpg']},
+  {id:'webcam',cat:'packaging',subcat:'ce',title:'視訊鏡頭包裝設計',short:'Webcam Packaging Design',desc:'視訊鏡頭包裝設計，採 Black Wet-Pressed Pulp Tray，兼顧防護與環保需求。',tags:['包裝設計','紙托'], images: ['/webcam01.jpg', '/webcam02.jpg']},
+  {id:'carrycase',cat:'packaging',subcat:'bike',title:'Carrycase 包袋設計',short:'收納包袋結構設計',desc:'自行車零件收納包袋設計，考量多 SKU 共用與模組化包裝平台。',tags:['包裝設計','自行車'], images: ['/carrycase01.jpg']},
+  {id:'mtb',cat:'packaging',subcat:'bike',title:'MTB Handle Bar 包裝設計',short:'MTB 車把手包裝設計',desc:'MTB 車把手三層瓦楞結構包裝，考量層板方案、正面紙板與包裝底座。',tags:['包裝設計','自行車','Handle Bar'], images: ['/mtb_handle_bar01.jpg', '/mtb_handle_bar02.jpg', '/mtb_handle_bar03.jpg', '/mtb_handle_bar04.png', '/mtb_handle_bar05.png', '/mtb_handle_bar06.png']},
+  {id:'tr',cat:'packaging',subcat:'bike',title:'TR Handle Bar 包裝設計',short:'TR 車把手包裝設計',desc:'TR Handle Bar 包裝結構設計，統整行李方案、正面紙板至包裝底座完整流程。',tags:['包裝設計','自行車'], images: ['/tr_handle_bar01.jpg', '/tr_handle_bar02.jpg', '/tr_handle_bar03.jpg', '/tr_handle_bar04.jpg', '/tr_handle_bar05.jpg', '/tr_handle_bar06.png', '/tr_handle_bar07.png', '/tr_handle_bar08.png']},
+  {id:'ra',cat:'packaging',subcat:'bike',title:'RA Handle Bar 包裝設計',short:'RA 車把手包裝設計',desc:'RA Handle Bar 系列包裝設計，涵蓋運輸、展示與量產導入規格。',tags:['包裝設計','自行車'], images: ['/ra_handle_bar01.png', '/ra_handle_bar02.png', '/ra_handle_bar03.png', '/ra_handle_bar04.png', '/ra_handle_bar05.png', '/ra_handle_bar06.png', '/ra_handle_bar07.png']},
+  {id:'seatpost',cat:'packaging',subcat:'bike',title:'座管 包裝設計',short:'座管包裝結構設計',desc:'自行車座管包裝結構設計，針對細長零件開發全紙質緩衝方案。',tags:['包裝設計','自行車','減塑'], images: ['/seatpost01.jpg', '/seatpost02.jpg', '/seatpost03.jpg', '/seatpost04.jpg', '/seatpost05.jpg', '/seatpost06.jpg', '/seatpost07.jpg', '/seatpost08.jpg', '/seatpost09.jpg']},
+  {id:'steerer',cat:'packaging',subcat:'bike',title:'立管 包裝設計',short:'立管包裝結構設計',desc:'立管包裝設計，開發輕量化、可回收包材方案。',tags:['包裝設計','自行車'], images: ['/steerer01.jpg', '/steerer02.jpg', '/steerer03.jpg', '/steerer04.jpg', '/steerer05.jpg']},
+  {id:'quickrelease',cat:'packaging',subcat:'bike',title:'快拆束仔 包裝設計',short:'快拆束仔包裝設計',desc:'快拆束仔小零件包裝設計，兼顧防護性與零售展示需求。',tags:['包裝設計','自行車'], images: ['/quickrelease01.jpg', '/quickrelease02.jpg', '/quickrelease03.jpg', '/quickrelease04.jpg']},
+  {id:'graphic',cat:'graphic',subcat:'branding',title:'平面設計',short:'品牌CIS / 海報 / 識別物料',desc:'品牌視覺識別系統（CIS）、海報設計與企業識別物料整合輸出。',tags:['品牌設計','平面','CIS'], images: ['/poster_design.jpg']}
 ];
 
 const COURSES = [
   {
     cat: 'packaging', 
-    title:'Packaging Structure Design & Cost Optimization',
+    title:'包裝結構設計、運輸驗證與成本優化實務課程',
     sub:'',
-    org:'Plastics Industry Development Center',
+    org:'財團法人塑膠工業技術發展中心',
     date:'2026.03.26',
-    hours:'48 Hours',
-    desc:'Focuses on structural design, transport testing, and cost optimization methods for packaging.',
-    outcomes: ['Structural Analysis', 'ISTA Testing Standards', 'Cost Estimation', 'Sustainable Materials'],
+    hours:'48 小時',
+    desc:'聚集包裝結構設計、運輸測試與成本優化方法，提升包材選型與量產導入判斷能力。',
+    outcomes: ['包裝結構力學分析', 'ISTA 運輸測試標準', '包裝材料成本估算', '永續包材選用指南'],
     images: ['/course-packaging.png', '/course-packaging-photo.jpg']
   },
   {
     cat: 'ai', 
-    title:'AI Talent Cultivation Program',
+    title:'在職菁英 AI 人才培育課程',
     sub:'',
-    org:'Ministry of Economic Affairs',
+    org:'114年度經濟部產業發展屬補助課程',
     date:'2025.12.09 – 2025.12.17',
-    hours:'30 Hours',
-    desc:'Covers AI fundamentals, machine learning theories, and generative AI applications.',
-    outcomes: ['ML Fundamentals', 'GenAI Principles', 'Industry Case Studies', 'Model Evaluation'],
+    hours:'30 小時',
+    desc:'學習 AI 基礎概論與架構、機器學習（監督式/非監督式學習）技術理論與案例、以及生成式 AI 的原理與應用。',
+    outcomes: ['機器學習基礎理論', '生成式 AI 技術原理', '產業 AI 導入案例分析', 'AI 模型評估與優化'],
     images: ['/course-ai-talent.png']
   },
   {
     cat: 'ai', 
-    title:'iPAS AI Application Planner Certificate',
+    title:'iPAS AI 應用規劃師初級證照班課程',
     sub:'',
-    org:'China Productivity Center',
+    org:'中國生產力中心 China Productivity Center',
     date:'2026.04.26',
-    hours:'48 Hours',
-    desc:'Systematic learning of AI implementation and planning. (In training, certificate pending)',
-    outcomes: ['AI Scenario Planning', 'Digital Transformation', 'AI Tool Integration', 'Exam Preparation'],
+    hours:'48 小時',
+    desc:'系統化學習 AI 導入、規劃與應用情境建構，強化跨領域數位工具整合能力。（正在培訓中，尚未取得證書）',
+    outcomes: ['AI 應用場景規劃', '數位轉型策略制定', 'AI 工具鏈整合', '證照考試重點解析'],
     images: ['/ipas-ai-planning-cert.jpg']
   },
   {
     cat: 'ai', 
-    title:'AI Application Practice (NUVA)',
+    title:'AI 應用實務系列課程(NUVA)',
     sub:'ChatGPT LV.1 & MAKE LV.1',
     org:'NUVA',
     date:'2025.03 – 2025.04',
-    hours:'16 Hours',
-    desc:'Learning AI bot creation and LINE official account integration for automation.',
-    outcomes: ['ChatGPT Prompting', 'MAKE Automation', 'LINE Bot Integration', 'AI Content Strategy'],
+    hours:'16 小時',
+    desc:'學習建立 AI 機器人與 LINE 官方帳號整合應用，實現品牌溝通自動化。',
+    outcomes: ['ChatGPT 進階指令技巧', 'MAKE 自動化工作流建置', 'LINE Bot 整合應用', 'AI 內容生成策略'],
     images: ['/chat-gpt-lv1.jpg', '/make-lv1.jpg', '/nuva-group-photo.jpg']
   },
   {
     cat: 'ai', 
-    title:'iPAS AI Application Planner Basic Training',
+    title:'iPAS AI應用規劃師初級能力培訓班',
     sub:'',
-    org:'Ministry of Economic Affairs',
+    org:'經濟部商業發展署',
     date:'2026.03.22',
-    hours:'15 Hours',
-    desc:'Basic AI application and planning in commercial scenarios.',
-    outcomes: ['AI Fundamentals', 'Scenario Analysis', 'Implementation Practice', 'Case Studies'],
+    hours:'15 小時',
+    desc:'學習 AI 基礎應用與規劃，掌握商業場景下的 AI 導入實務。',
+    outcomes: ['AI 基礎概論', '商業應用場景分析', 'AI 規劃實務', '案例研究'],
     images: ['/ipas-ai-planning-basic.jpg']
   }
 ];
@@ -158,74 +158,74 @@ const COURSE_CATS = {
 
 const EXP_DATA = [
   {
-    role:'Packaging Engineer', co:'Merry Electronics Co., Ltd.', period:'2022/7 – 2025/05・2 yrs 11 mos',
-    loc:'Taichung, Taiwan・Consumer Electronics 500+ employees',
+    role:'包裝工程師', co:'美律實業股份有限公司', period:'2022/7～2025/05・2年11個月',
+    loc:'台中市南屯區・精密儀器相關製造業 500人以上',
     logo: '/merry-logo.jpg',
-    duties:['Consumer electronics packaging development and structural design','Engineering drawings and packaging process documentation','Supplier sample tracking and quality improvement'],
+    duties:['消費性電子產品包裝開發工作、包裝相關提案與結構設計','新機型產品包材圖面繪製、包裝作業流程製作','包裝廠商樣品追蹤、品質問題改善確認'],
     results:[
-      'TWS / HDT / Soundbar packaging proposals for international brands (25+ projects)',
-      'Proposed multi-tier packaging solutions based on product positioning, achieving 40% win rate',
-      'Led structural design and cost analysis during RFQ, saving approx. 10% in material costs'
+      '國際品牌 TWS / HDT / Soundbar 包裝設計提案（共 25 件）',
+      '根據產品定位提出多元價位包裝設計方案，滿足不同市場需求與品牌策略，接案達成率達 40%',
+      '於 RFQ 階段設計消費性電子產品包裝、工程圖面繪製及成本分析，達成研發成本節省約 10%'
     ],
-    tags:['Creo','Product Development','CAD','Structural Evaluation','Packaging Design']
+    tags:['Creo','產品開發','電腦繪圖軟體操作','產品結構評估','包裝設計']
   },
   {
-    role:'Product Designer', co:'Taiwan Sakura Corporation', period:'2020/3 – 2022/7・2 yrs 5 mos',
-    loc:'Taichung, Taiwan・Kitchen Appliances 500+ employees',
+    role:'產品設計師', co:'台灣櫻花股份有限公司', period:'2020/3～2022/7・2年5個月',
+    loc:'台中市大雅區・非金屬家具及裝設品製造業 500人以上',
     logo: '/sakura-logo.png',
-    duties:['Market planning and design direction based on consumer research','Cross-functional collaboration','Kitchen appliance market and design trend research'],
+    duties:['針對 PM 市場規劃結合消費者調查結果擬定設計方向','跨部門協作經驗','國內外廚電市場與造型趨勢調研'],
     results:[
-      '2021 Outstanding Employee Award',
-      'Product development and market launch experience',
-      'Led the launch of G2522AG & G2623AG gas stoves, optimizing cleaning design and knob aesthetics'
+      '2021 年度績優員工',
+      '產品開發與上市經驗',
+      '主導易清檯面爐 G2522AG、G2623AG 上市，優化清潔設計與旋鈕造型'
     ],
-    tags:['Creo','Photoshop','Illustrator','KeyShot','Design Tools']
+    tags:['Creo','Adobe Photoshop','Illustrator','Key Shot','繪圖工具軟體操作']
   },
   {
-    role:'Product Designer', co:'EMG Technology Co., Ltd.', period:'2018/11 – 2019/12・1 yr 2 mos',
-    loc:'Taichung, Taiwan・Medical Devices 30–100 employees',
+    role:'產品設計師', co:'上岳科技股份有限公司', period:'2018/11～2019/12・1年2個月',
+    loc:'台中市南屯區・醫療器材製造業 30–100人',
     logo: '/emg-logo.png',
-    duties:['New product proposals and presentations','ID proposals based on RD modules, including visual, material, and styling','Industrial design for medical products'],
+    duties:['新品提案與簡報製作','依據 RD 提供模組進行產品設計提案，含視覺、材質規劃與造型風格定調','產品造型設計'],
     results:[
-      '2 TENS device ID proposals',
-      'Pediatric nebulizer ID proposal',
-      '5 SPO2 wristband ID proposals'
+      '低周波治療器 2 款外觀提案',
+      '兒童用霧化器外觀提案',
+      'SPO2 手環 5 款外觀提案'
     ],
-    tags:['SolidWorks','Illustrator','Photoshop','KeyShot','Mechanical Design','Styling']
+    tags:['SolidWorks','Illustrator','Photoshop','Key Shot','產品機構設計','外型設計']
   },
   {
-    role:'Product Designer', co:'CIC Co., Ltd.', period:'2017/8 – 2018/8・1 yr 1 mo',
-    loc:'New Taipei City, Taiwan・Design Services 30–100 employees',
+    role:'產品設計師', co:'研成股份有限公司', period:'2017/8～2018/8・1年1個月',
+    loc:'新北市新店區・專門設計相關業 30–100人',
     logo: '/cic-logo.png',
-    duties:['New product proposals and presentations','ID proposals based on RD modules','Industrial design and styling'],
+    duties:['新品提案與簡報製作','依據 RD 提供模組進行產品設計提案','產品造型設計'],
     results:[
-      'Led aluminum product design for GAKKEN (Japan)',
-      'Developed all-in-one solar products & packaging design',
-      'Assisted in color configuration for 12-in-1 solar products'
+      '獨立負責日本學研 GAKKEN 委託之鋁製品設計案',
+      '研發多合一 solar 新產品 & 彩盒設計規劃',
+      '協助 2018 年度 12in1 solar 產品色彩配置'
     ],
-    tags:['Illustrator','Photoshop','Product Design','Packaging Design','KeyShot']
+    tags:['Illustrator','Adobe Photoshop','產品設計','產品包裝設計','Key Shot']
   }
 ];
 
 const INTERESTS = [
-  { id: 'gym', title: 'Weight Training', icon: Dumbbell, goal: 'Currently 2 sessions/week,\nGoal: 4 sessions/week!', desc: 'Training endurance and discipline, persisting in every small progress to challenge a stronger self.', emojis: ['🏋️', '💪', '🏃', '⚡'], image: '/gym.jpg' },
-  { id: 'marathon', title: 'Marathon', icon: Timer, goal: '5 Half-marathons completed,\nGoal: First Full Marathon!', desc: 'With 5 half-marathon experiences, I aim to challenge my first full marathon—not just for fitness, but as a test of conviction!', emojis: ['🏅', '🎽', '🏃‍♀️', '🥇'], image: '/marathon.jpg' },
-  { id: 'hiking', title: 'Hiking', icon: Mountain, goal: '2 Baiyue peaks reached,\nGoal: Continue the Baiyue challenge!', desc: 'Beyond fitness and long-distance running, I love the challenge of mountain climbing, having successfully summitted two of Taiwan\'s Baiyue peaks.', emojis: ['⛰️', '🌄', '🥾', '🗻'], image: '/hiking.jpg' }
+  { id: 'gym', title: '重量訓練', icon: Dumbbell, goal: '目前每週2練，\n目標提升至每週4練！', desc: '訓練耐力與自律，堅持每一步小進步，挑戰更強的自己。', emojis: ['🏋️', '💪', '🏃', '⚡'], image: '/gym.jpg' },
+  { id: 'marathon', title: '馬拉松', icon: Timer, goal: '5次半馬，\n目標完成人生第一場全馬！', desc: '目前有5次半馬的經驗，目標挑戰人生第一場全馬拉松，不只是體能，更是堅持信念的挑戰！', emojis: ['🏅', '🎽', '🏃‍♀️', '🥇'], image: '/marathon.jpg' },
+  { id: 'hiking', title: '登山', icon: Mountain, goal: '登頂2座百岳，\n目標持續挑戰台灣百岳全集！', desc: '除了健身與長跑，我也熱愛登山挑戰，目前已成功攀登兩座台灣百岳。', emojis: ['⛰️', '🌄', '🥾', '🗻'], image: '/hiking.jpg' }
 ];
 
 const TABS = [
-  { id: 'about', label: 'About', icon: User },
-  { id: 'exp', label: 'Experience', icon: Briefcase },
-  { id: 'skills', label: 'Skills', icon: Wrench },
-  { id: 'projects', label: 'Projects', icon: Grid },
-  { id: 'courses', label: 'Courses', icon: BookOpen },
-  { id: 'interests', label: 'Interests', icon: Heart },
+  { id: 'about', label: '關於我', icon: User },
+  { id: 'exp', label: '經歷', icon: Briefcase },
+  { id: 'skills', label: '技能專長', icon: Wrench },
+  { id: 'projects', label: '專案成就', icon: Grid },
+  { id: 'courses', label: '進修課程', icon: BookOpen },
+  { id: 'interests', label: '興趣', icon: Heart },
 ];
 
 const AvatarSVG = () => (
   <img 
     src="/profile.jpg" 
-    alt="Amanda Lai" 
+    alt="賴以婕 Amanda" 
     className="w-full h-full object-cover"
     referrerPolicy="no-referrer"
   />
@@ -306,13 +306,13 @@ export default function App() {
 
   const renderAbout = () => (
     <div className="flex flex-col gap-4">
-      {/* About Amanda Lai */}
+      {/* 關於賴以婕 */}
       <div className="border-2 border-[#e9ecef] bg-white rounded-xl p-5 transition-all hover:border-[#3d7a5a]">
         <div className="flex items-center gap-3 mb-4 border-b border-[#e9ecef] pb-3">
           <div className="w-10 h-10 rounded-full bg-[#e8f5ee] text-[#3d7a5a] flex items-center justify-center shrink-0">
             <User size={22} />
           </div>
-          <h2 className="text-[18px] font-bold text-[#343a40]">About Amanda Lai</h2>
+          <h2 className="text-[18px] font-bold text-[#343a40]">關於賴以婕</h2>
         </div>
         
         <div className="space-y-6">
@@ -323,16 +323,16 @@ export default function App() {
                   <Layers size={14} />
                 </div>
               </div>
-              Design Background & Development Experience
+              設計背景 × 設計流程開發經驗
             </h3>
             <div className="space-y-3 pl-[52px]">
               <div className="flex gap-2 items-start text-sm leading-relaxed text-[#6c757d]">
                 <ArrowRight size={14} className="mt-1 text-[#3d7a5a] shrink-0" />
-                <span>Graduated from National Taiwan University of Science and Technology (NTUST) in Industrial Design. 6 years of experience in product and packaging design, familiar with the full development process from ID to mass production.</span>
+                <span>畢業於台灣科技大學工業設計系，擁有 6 年產品與包裝設計實務經驗，熟悉從外觀設計、結構開發到量產製程的完整開發流程。</span>
               </div>
               <div className="flex gap-2 items-start text-sm leading-relaxed text-[#6c757d]">
                 <ArrowRight size={14} className="mt-1 text-[#3d7a5a] shrink-0" />
-                <span>Expert in market research, positioning analysis, and 2D/3D design planning. Proficient in prototyping, modeling, and engineering drawings with the flexibility to adjust strategies based on budget and cost constraints.</span>
+                <span>擅長品牌前期市場調研與定位分析，根據產品需求進行2D/3D設計規劃，執行草模驗證、建模與工程圖繪製，並具備『依照預算與成本條件調整設計策略的靈活應變能力』。</span>
               </div>
             </div>
           </div>
@@ -343,29 +343,29 @@ export default function App() {
                   <Package size={14} />
                 </div>
               </div>
-              Packaging Design Specialization
+              包裝設計專業深化
             </h3>
             <div className="space-y-3 pl-[52px]">
               <div className="flex gap-2 items-start text-sm leading-relaxed text-[#6c757d]">
                 <ArrowRight size={14} className="mt-1 text-[#3d7a5a] shrink-0" />
-                <span>Formerly at Merry Electronics, responsible for TWS, HDT, and Soundbar packaging for international brands. Strengthened skills in eco-friendly structure design and cross-functional project execution.</span>
+                <span>曾任職於美律實業股份有限公司，負責TWS耳機、電競耳機、Soundbar等國際品牌的包裝設計與開發，持續強化『環保包裝結構設計、跨部門專案執行能力及開發經驗』。</span>
               </div>
               <div className="flex gap-2 items-start text-sm leading-relaxed text-[#6c757d]">
                 <ArrowRight size={14} className="mt-1 text-[#3d7a5a] shrink-0" />
-                <span>Currently at JD Components, focusing on bicycle part packaging innovation. Dedicated to developing all-paper cushioning and plastic-free solutions to achieve low-carbon sustainability goals.</span>
+                <span>現任職於久鼎金屬實業股份有限公司，專注於自行車零件包裝結構革新。<br />致力於開發「全紙質緩衝結構」與「減塑方案」，協助產業落實低碳永續目標。</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Design & Development Practice */}
+      {/* 設計 X 開發實務經驗 */}
       <div className="border-2 border-[#e9ecef] bg-white rounded-xl p-5 transition-all hover:border-[#3d7a5a]">
         <div className="flex items-center gap-3 mb-4 border-b border-[#e9ecef] pb-3">
           <div className="w-10 h-10 rounded-full bg-[#e8f5ee] text-[#3d7a5a] flex items-center justify-center shrink-0">
             <Briefcase size={22} />
           </div>
-          <h2 className="text-[18px] font-bold text-[#343a40]">Design & Development Practice</h2>
+          <h2 className="text-[18px] font-bold text-[#343a40]">設計 × 開發實務經驗</h2>
         </div>
         
         <div className="space-y-6">
@@ -376,32 +376,32 @@ export default function App() {
                   <Box size={14} />
                 </div>
               </div>
-              Packaging Design
+              包裝設計領域
             </h3>
             <div className="space-y-4 pl-[52px]">
               <div>
                 <div className="text-sm font-bold text-[#343a40] mb-2 flex items-start gap-2">
                   <ArrowRight size={14} className="mt-0.5 text-[#3d7a5a] shrink-0" />
-                  International TWS/HDT/Soundbar Packaging Proposals (25+ projects)
+                  國際品牌 TWS／HDT／Soundbar 包裝設計提案 (共25件)
                 </div>
                 <div className="text-sm leading-relaxed text-[#6c757d] pl-[22px] space-y-2">
-                  <p>Proposed multi-tier (low/mid/high) packaging solutions based on product positioning to meet diverse market needs and brand strategies.</p>
-                  <p>Led structural design and cost analysis during RFQ for consumer electronics, helping R&D achieve approx. 10% savings in material costs.</p>
+                  <p>根據產品定位提出多元價位(低/中/高)包裝設計方案，滿足不同市場需求與品牌策略</p>
+                  <p>在消費性電子產品RFQ階段，主導包裝結構設計、2D工程圖繪製與初步成本分析，成功協助研發單位達成約10%的包材成本節省</p>
                 </div>
               </div>
               <div>
                 <div className="text-sm font-bold text-[#343a40] mb-2 flex items-start gap-2">
                   <ArrowRight size={14} className="mt-0.5 text-[#3d7a5a] shrink-0" />
-                  Created Packaging Design Databases & Market Research (6+ projects)
+                  建立包裝設計資料庫以及市調資料表 (共6件)
                 </div>
-                <p className="text-sm leading-relaxed text-[#6c757d] pl-[22px]">Compiled specs for TWS, HDT, and Soundbar card inners into a modular database, accelerating proposal efficiency and market alignment.</p>
+                <p className="text-sm leading-relaxed text-[#6c757d] pl-[22px]">彙整 TWS、HDT、Soundbar 紙卡內襯結構規格，形成模組化資料庫，加速專案提案效率，並精準對焦市場需求</p>
               </div>
               <div>
                 <div className="text-sm font-bold text-[#343a40] mb-2 flex items-start gap-2">
                   <ArrowRight size={14} className="mt-0.5 text-[#3d7a5a] shrink-0" />
-                  Participated in HDT Gaming Headset Development (2 projects)
+                  參與 HDT 電競耳機開發專案 (共2件)
                 </div>
-                <p className="text-sm leading-relaxed text-[#6c757d] pl-[22px]">Involved in the development of two HyperX headset models, gaining experience from structural design and sampling to mass production.</p>
+                <p className="text-sm leading-relaxed text-[#6c757d] pl-[22px]">實際參與兩款 HyperX 電競耳機機型開發，累積從結構設計、打樣修正到量產導入的完整開發經驗</p>
               </div>
             </div>
           </div>
@@ -413,20 +413,20 @@ export default function App() {
                   <PenTool size={14} />
                 </div>
               </div>
-              Product Design
+              產品設計領域
             </h3>
             <div className="space-y-3 pl-[52px]">
               <div className="flex gap-2 items-start text-sm leading-relaxed text-[#6c757d]">
                 <ArrowRight size={14} className="mt-1 text-[#3d7a5a] shrink-0" />
-                <span>Led the full development of easy-clean gas stoves and side-suction hoods.</span>
+                <span>主導易清系列檯面爐與近吸式油煙機完整開發流程</span>
               </div>
               <div className="flex gap-2 items-start text-sm leading-relaxed text-[#6c757d]">
                 <ArrowRight size={14} className="mt-1 text-[#3d7a5a] shrink-0" />
-                <span>Managed Golden Pin Design Award submissions with 2 entries selected (R3750B, P0233/235).</span>
+                <span>親自承辦金點設計競賽提案並獲得兩件入選（R3750B、P0233／235）</span>
               </div>
               <div className="flex gap-2 items-start text-sm leading-relaxed text-[#6c757d]">
                 <ArrowRight size={14} className="mt-1 text-[#3d7a5a] shrink-0" />
-                <span>Assisted in ID and structural development for mass production (e.g., R3750B).</span>
+                <span>協助外觀與結構開發並導入量產流程，成功落地產品（如 R3750B）</span>
               </div>
             </div>
           </div>
@@ -438,25 +438,25 @@ export default function App() {
                   <Users size={14} />
                 </div>
               </div>
-              Cross-functional & Supplier Collaboration
+              跨部門與供應商協作能力
             </h3>
             <div className="space-y-3 pl-[52px]">
               <div className="flex gap-2 items-start text-sm leading-relaxed text-[#6c757d]">
                 <ArrowRight size={14} className="mt-1 text-[#3d7a5a] shrink-0" />
-                <span>Close collaboration with suppliers and factories to ensure smooth production and quality stability.</span>
+                <span>能與供應商與工廠密切協作，確保設計順利導入量產並維持品質穩定</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Career Goals */}
+      {/* 職涯規劃 */}
       <div className="border-2 border-[#e9ecef] bg-white rounded-xl p-5 transition-all hover:border-[#3d7a5a]">
         <div className="flex items-center gap-3 mb-4 border-b border-[#e9ecef] pb-3">
           <div className="w-10 h-10 rounded-full bg-[#e8f5ee] text-[#3d7a5a] flex items-center justify-center shrink-0">
             <Target size={22} />
           </div>
-          <h2 className="text-[18px] font-bold text-[#343a40]">Career Goals</h2>
+          <h2 className="text-[18px] font-bold text-[#343a40]">職涯規劃</h2>
         </div>
         
         <div className="flex flex-col gap-4">
@@ -467,20 +467,20 @@ export default function App() {
                   <Flag size={14} />
                 </div>
               </div>
-              Short-term Goals
+              短期目標
             </h3>
             <div className="space-y-3 pl-[52px]">
               <div className="flex gap-2 items-start text-sm leading-relaxed text-[#6c757d]">
                 <ArrowRight size={14} className="mt-1 text-[#3d7a5a] shrink-0" />
-                <span>Deep dive into ESG sustainability, exploring CMF characteristics and processing technologies for paper and fabrics. Build a knowledge base and collaborate with suppliers for eco-friendly materials.</span>
+                <span>深入 ESG 永續議題，探索各類紙材、布料等 CMF 特性與加工技術，建立應用知識庫，並與供應商合作開發環保材質</span>
               </div>
               <div className="flex gap-2 items-start text-sm leading-relaxed text-[#6c757d]">
                 <ArrowRight size={14} className="mt-1 text-[#3d7a5a] shrink-0" />
-                <span>Strengthen paper structural design capabilities with the goal of filing innovative design patents.</span>
+                <span>強化紙材結構設計能力，目標能提出具創新性的設計專利</span>
               </div>
               <div className="flex gap-2 items-start text-sm leading-relaxed text-[#6c757d]">
                 <ArrowRight size={14} className="mt-1 text-[#3d7a5a] shrink-0" />
-                <span>Develop cost assessment skills for paper materials to propose structural optimizations that balance protection and cost-effectiveness.</span>
+                <span>培養紙材成本評估能力，根據需求提出兼顧保護性與成本效益的結構優化方案</span>
               </div>
             </div>
           </div>
@@ -491,42 +491,42 @@ export default function App() {
                   <TrendingUp size={14} />
                 </div>
               </div>
-              Mid-to-Long-term Goals
+              中長期目標
             </h3>
             <div className="space-y-3 pl-[52px]">
               <div className="flex gap-2 items-start text-sm leading-relaxed text-[#6c757d]">
                 <ArrowRight size={14} className="mt-1 text-[#3d7a5a] shrink-0" />
-                <span>Accumulate international and cross-functional collaboration experience, strengthening English communication for global work environments.</span>
+                <span>累積跨國與跨部門合作經驗，強化英文聽說讀寫的能力以應對全球化的工作需求</span>
               </div>
               <div className="flex gap-2 items-start text-sm leading-relaxed text-[#6c757d]">
                 <ArrowRight size={14} className="mt-1 text-[#3d7a5a] shrink-0" />
-                <span>Continue improving design implementation and manufacturing collaboration through more practical development projects.</span>
+                <span>持續提升設計落地與製程協作能力，累積更多實戰開發經驗</span>
               </div>
               <div className="flex gap-2 items-start text-sm leading-relaxed text-[#6c757d]">
                 <ArrowRight size={14} className="mt-1 text-[#3d7a5a] shrink-0" />
-                <span>Build sensitivity to packaging trends and market shifts, integrating marketing perspectives to become a strategic design and development professional.</span>
+                <span>建立包裝設計與市場趨勢的連結敏感度，結合行銷視角強化整合能力，朝向具策略思維的設計開發整合型人才邁進</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Design Philosophy */}
+      {/* 設計理念 */}
       <div className="border-2 border-[#e9ecef] bg-white rounded-xl p-5 transition-all hover:border-[#3d7a5a]">
         <div className="flex items-center gap-3 mb-4 border-b border-[#e9ecef] pb-3">
           <div className="w-10 h-10 rounded-full bg-[#e8f5ee] text-[#3d7a5a] flex items-center justify-center shrink-0">
             <Lightbulb size={22} />
           </div>
-          <h2 className="text-[18px] font-bold text-[#343a40]">Design Philosophy</h2>
+          <h2 className="text-[18px] font-bold text-[#343a40]">設計理念</h2>
         </div>
         <ol className="flex flex-col gap-4 mt-2">
           {[
-            'Design should balance emotion and reason: Design is not just about visual and emotional value; it must consider manufacturing feasibility, technical constraints, cost control, and quality stability.',
-            'Design must serve the product and user experience: I value the essence of the product, focusing on how design practically improves user convenience and brand value.',
-            'Value cross-functional collaboration and communication efficiency: Great design comes from great collaboration. I enjoy working with different roles to integrate needs and resources.',
-            'Maintain passion and learning momentum: For me, design is a continuous process of exploration. I remain passionate and curious, eager to contribute and grow with my team.'
+            '設計應兼具感性與理性：設計不僅是創造視覺與情感價值，更必須考量製程可行性、技術限制、成本控制與品質穩定性。',
+            '設計須服務於產品與使用者體驗：我重視產品本質，關注設計如何實際提升使用者的便利性與品牌價值，讓設計發揮功能性與影響力。',
+            '重視跨部門合作與溝通效率：良好的設計來自良好的協作，我樂於與不同角色協同合作，透過積極溝通整合各方需求與資源。',
+            '持續保持熱情與學習動能：對我而言，設計不只是工作，更是一種持續探索的過程。我始終懷抱熱情與好奇心，樂於在團隊中貢獻專業，也期待在未來的職位中持續成長，與夥伴一同創造實質價值，攜手向前。'
           ].map((text, i) => {
-            const [bold, rest] = text.split(': ');
+            const [bold, rest] = text.split('：');
             return (
               <li key={i} className="flex gap-3 items-start text-sm leading-relaxed text-[#6c757d]">
                 <div className="w-10 flex justify-center shrink-0">
@@ -542,13 +542,13 @@ export default function App() {
         </ol>
       </div>
 
-      {/* Interests & Hobbies */}
+      {/* 興趣嗜好 */}
       <div className="border-2 border-[#e9ecef] bg-white rounded-xl p-5 transition-all hover:border-[#3d7a5a]">
         <div className="flex items-center gap-3 mb-4 border-b border-[#e9ecef] pb-3">
           <div className="w-10 h-10 rounded-full bg-[#e8f5ee] text-[#3d7a5a] flex items-center justify-center shrink-0">
             <Heart size={22} />
           </div>
-          <h2 className="text-[18px] font-bold text-[#343a40]">Interests & Hobbies</h2>
+          <h2 className="text-[18px] font-bold text-[#343a40]">興趣嗜好</h2>
         </div>
         
         <div>
@@ -558,27 +558,27 @@ export default function App() {
                 <Dumbbell size={14} />
               </div>
             </div>
-            Sports & Training
+            運動訓練
           </h3>
           <p className="text-sm leading-relaxed text-[#6c757d] pl-[52px]">
-            Outside of work, I am passionate about challenging sports like fitness, marathons, and hiking.<br/><br/>
-            These activities help me maintain physical and mental health while teaching me goal-setting and perseverance. Sports serve as a path for self-discovery and stress relief, deeply influencing my work ethic and resilience.
+            工作之餘，我熱衷於挑戰自我的運動項目，包括健身、馬拉松與登山。<br/><br/>
+            這些活動不僅讓我保持身心健康，更讓我在一次次的訓練與突破中，學習如何與自己對話、建立目標並找出實踐方法。對我而言，運動是一種自我探索與壓力釋放的途徑，也深深影響了我在工作上的思考方式與執行力。它讓我更堅定、更有彈性，也讓我在生活中保持熱情與正向的態度。
           </p>
         </div>
       </div>
 
-      {/* Conclusion */}
+      {/* 結語 */}
       <div className="border-2 border-[#e9ecef] bg-white rounded-xl p-5 transition-all hover:border-[#3d7a5a]">
         <div className="flex items-center gap-3 mb-4 border-b border-[#e9ecef] pb-3">
           <div className="w-10 h-10 rounded-full bg-[#e8f5ee] text-[#3d7a5a] flex items-center justify-center shrink-0">
             <Check size={22} />
           </div>
-          <h2 className="text-[18px] font-bold text-[#343a40]">Conclusion</h2>
+          <h2 className="text-[18px] font-bold text-[#343a40]">結語</h2>
         </div>
         
         <div className="bg-[#e8f5ee] p-4 rounded-xl text-[#3d7a5a] text-sm leading-relaxed font-medium text-left">
-          Thank you very much for reading. Please feel free to contact me for further information.<br/>
-          I look forward to the opportunity for a formal interview to bring my passion and expertise to your team.
+          非常感謝您的閱讀。如有進一步了解的需要，歡迎與我聯繫。<br/>
+          若有幸符合貴公司徵才條件，我將十分期待有機會參與正式面試，為團隊帶來我的熱情與專業。
         </div>
       </div>
     </div>
@@ -591,7 +591,7 @@ export default function App() {
           <div className="w-10 h-10 rounded-full bg-[#e8f5ee] text-[#3d7a5a] flex items-center justify-center shrink-0">
             <Briefcase size={22} />
           </div>
-          <h2 className="text-[18px] font-bold text-[#343a40]">Work Experience</h2>
+          <h2 className="text-[18px] font-bold text-[#343a40]">工作經歷</h2>
         </div>
         
         <div className="flex flex-col gap-3">
@@ -641,7 +641,7 @@ export default function App() {
                             <ClipboardList size={14} className="text-[#3d7a5a]" />
                           </div>
                         </div>
-                        Key Responsibilities
+                        主要職責
                       </div>
                       <div className="flex flex-col gap-2">
                         {exp.duties.map((d, j) => (
@@ -658,7 +658,7 @@ export default function App() {
                             <Trophy size={14} className="text-[#3d7a5a]" />
                           </div>
                         </div>
-                        Key Achievements
+                        主要成果
                       </div>
                       <div className="flex flex-col gap-2">
                         {exp.results.map((r, j) => (
@@ -680,36 +680,36 @@ export default function App() {
         ))}
       </div>
 
-      {/* Education */}
+      {/* 學歷 */}
       <div className="border-2 border-[#e9ecef] bg-white rounded-xl p-5 transition-all hover:border-[#3d7a5a] mt-8">
         <div className="flex items-center gap-3 mb-4 border-b border-[#e9ecef] pb-3">
           <div className="w-10 h-10 rounded-full bg-[#e8f5ee] text-[#3d7a5a] flex items-center justify-center shrink-0">
             <GraduationCap size={22} />
           </div>
-          <h2 className="text-[18px] font-bold text-[#343a40]">Education</h2>
+          <h2 className="text-[18px] font-bold text-[#343a40]">學歷</h2>
         </div>
         
         <div className="space-y-4">
           <div className="flex gap-3 items-center">
             <div className="w-10 flex justify-center shrink-0">
               <div className="w-10 h-10 rounded-lg bg-white border border-[#e9ecef] shrink-0 flex items-center justify-center overflow-hidden relative group">
-                <img src="/ntust-logo.png" alt="NTUST" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" />
+                <img src="/ntust-logo.png" alt="國立臺灣科技大學" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" />
               </div>
             </div>
             <div>
-              <div className="font-bold text-[15px] text-[#343a40]">National Taiwan University of Science and Technology</div>
-              <div className="text-xs text-[#6c757d] mt-0.5">Industrial Design・Bachelor's Degree</div>
+              <div className="font-bold text-[15px] text-[#343a40]">國立臺灣科技大學</div>
+              <div className="text-xs text-[#6c757d] mt-0.5">工業設計系・大學畢業</div>
             </div>
           </div>
           <div className="flex gap-3 items-center">
             <div className="w-10 flex justify-center shrink-0">
               <div className="w-10 h-10 rounded-lg bg-white border border-[#e9ecef] shrink-0 flex items-center justify-center overflow-hidden relative group">
-                <img src="/tcivs-logo.jpg" alt="TCIVS" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" />
+                <img src="/tcivs-logo.jpg" alt="國立台中高工" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" />
               </div>
             </div>
             <div>
-              <div className="font-bold text-[15px] text-[#343a40]">Taichung Industrial High School</div>
-              <div className="text-xs text-[#6c757d] mt-0.5">Graphic Arts・Vocational High School</div>
+              <div className="font-bold text-[15px] text-[#343a40]">國立台中高工</div>
+              <div className="text-xs text-[#6c757d] mt-0.5">圖文傳播科・高職畢業</div>
             </div>
           </div>
         </div>
@@ -763,7 +763,7 @@ export default function App() {
                 <div className="space-y-3">
                   <div className="bg-[#f8f9fa] rounded-lg p-3 border border-[#e9ecef]">
                     <div className="text-[12px] font-bold text-[#adb5bd] uppercase tracking-wider mb-2 flex items-center gap-1.5">
-                      <Layers size={12} /> Core Components & Sub-skills
+                      <Layers size={12} /> 核心組成與子技能
                     </div>
                     <div className="flex flex-wrap gap-2">
                       {skill.subSkills.map((sub: string, j: number) => (
@@ -797,7 +797,7 @@ export default function App() {
                 <Cpu size={14} />
               </div>
             </div>
-            Software Tools
+            軟體工具
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8 pl-[52px]">
             {[
@@ -824,10 +824,10 @@ export default function App() {
                 <Palette size={14} />
               </div>
             </div>
-            Languages
+            語言能力
           </h2>
           <div className="flex flex-wrap gap-1.5 pl-[52px]">
-            {['Chinese (Native)', 'English (Professional)', 'Taiwanese'].map((t, i) => (
+            {['中文（母語）', '英文（工作應用）', '台語'].map((t, i) => (
               <motion.span 
                 key={i} 
                 whileHover={{ scale: 1.05, y: -1 }}
@@ -846,20 +846,20 @@ export default function App() {
   const renderProjects = () => {
     const SUBCATS: Record<string, { id: string, label: string }[]> = {
       packaging: [
-        { id: 'all', label: 'All Packaging' },
-        { id: 'ce', label: 'Consumer Electronics' },
-        { id: 'bike', label: 'Bicycle Parts' }
+        { id: 'all', label: '全部包裝' },
+        { id: 'ce', label: '消費性電子產品' },
+        { id: 'bike', label: '自行車零件' }
       ],
       product: [
-        { id: 'all', label: 'All Products' },
-        { id: 'appliance', label: 'Kitchen Appliances' },
-        { id: 'medical', label: 'Medical/Wearable' },
-        { id: 'toy', label: 'Toy Design' },
-        { id: 'sketch', label: 'Sketching' }
+        { id: 'all', label: '全部產品' },
+        { id: 'appliance', label: '廚電/家電' },
+        { id: 'medical', label: '醫療/穿戴' },
+        { id: 'toy', label: '玩具設計' },
+        { id: 'sketch', label: '手繪作品' }
       ],
       graphic: [
-        { id: 'all', label: 'All Graphic' },
-        { id: 'branding', label: 'Branding/CIS' }
+        { id: 'all', label: '全部平面' },
+        { id: 'branding', label: '品牌/CIS' }
       ]
     };
 
@@ -971,13 +971,13 @@ export default function App() {
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-[#adb5bd] shadow-sm">
                 <Search size={24} />
               </div>
-              <h3 className="text-sm font-bold text-[#343a40] mb-1">No projects found</h3>
-              <p className="text-xs text-[#adb5bd]">Try adjusting your search or filters</p>
+              <h3 className="text-sm font-bold text-[#343a40] mb-1">找不到相關專案</h3>
+              <p className="text-xs text-[#adb5bd]">請嘗試調整搜尋關鍵字或篩選條件</p>
               <button 
                 onClick={() => { setProjSearch(''); setActiveProjSubCats(['all']); }}
                 className="mt-4 text-xs text-[#3d7a5a] font-bold hover:underline"
               >
-                Reset all filters
+                重設所有篩選
               </button>
             </div>
           )}
@@ -1061,7 +1061,7 @@ export default function App() {
                       {c.hours && (
                         <div className="mt-2">
                           <span className="bg-[#e8f5ee] text-[#3d7a5a] text-[10px] px-2 py-0.5 rounded-full font-bold">
-                            Duration: {c.hours}
+                            培訓時長：{c.hours}
                           </span>
                         </div>
                       )}
@@ -1079,13 +1079,13 @@ export default function App() {
                         <div className="px-4 pb-5 pt-2 border-t border-[#f1f3f5] bg-[#fcfdfc]">
                           <div className="space-y-4">
                             <div>
-                              <div className="text-[11px] font-bold text-[#adb5bd] uppercase tracking-wider mb-2">Course Introduction</div>
+                              <div className="text-[11px] font-bold text-[#adb5bd] uppercase tracking-wider mb-2">課程簡介</div>
                               <p className="text-xs text-[#6c757d] leading-relaxed">{c.desc}</p>
                             </div>
 
                             {c.outcomes && c.outcomes.length > 0 && (
                               <div>
-                                <div className="text-[11px] font-bold text-[#adb5bd] uppercase tracking-wider mb-2">Learning Objectives & Modules</div>
+                                <div className="text-[11px] font-bold text-[#adb5bd] uppercase tracking-wider mb-2">學習重點與模組</div>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
                                   {c.outcomes.map((outcome, idx) => (
                                     <div key={idx} className="flex items-center gap-2 p-2 rounded-lg bg-white border border-[#e9ecef]">
@@ -1107,7 +1107,7 @@ export default function App() {
                                 }}
                                 className="text-[11px] font-bold text-[#3d7a5a] flex items-center gap-1 hover:underline"
                               >
-                                View Details <ArrowRight size={12} />
+                                開啟完整詳情 <ArrowRight size={12} />
                               </button>
                             </div>
                           </div>
@@ -1123,13 +1123,13 @@ export default function App() {
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-[#adb5bd] shadow-sm">
                 <Search size={24} />
               </div>
-              <h3 className="text-sm font-bold text-[#343a40] mb-1">No courses found</h3>
-              <p className="text-xs text-[#adb5bd]">Try adjusting your search or filters</p>
+              <h3 className="text-sm font-bold text-[#343a40] mb-1">找不到相關課程</h3>
+              <p className="text-xs text-[#adb5bd]">請嘗試調整搜尋關鍵字或篩選條件</p>
               <button 
                 onClick={() => { setCourseSearch(''); setActiveCourseCat('all'); }}
                 className="mt-4 text-xs text-[#3d7a5a] font-bold hover:underline"
               >
-                Reset all filters
+                重設所有篩選
               </button>
             </div>
           )}
@@ -1236,23 +1236,23 @@ export default function App() {
             <AvatarSVG />
           </motion.div>
           
-          <h1 className="text-center text-[1.2rem] font-bold">Amanda Lai</h1>
-          <p className="text-center text-[#6c757d] text-[0.82rem] mt-1">Industrial Designer / Packaging Engineer</p>
+          <h1 className="text-center text-[1.2rem] font-bold">賴以婕 Amanda</h1>
+          <p className="text-center text-[#6c757d] text-[0.82rem] mt-1">工業設計師 / 包裝工程師</p>
           <div className="flex items-center justify-center gap-1 text-[#adb5bd] text-[0.78rem] mt-2 mb-4">
             <MapPin size={12} />
-            Taichung, Taiwan
+            台灣, 台中
           </div>
           <div className="h-px bg-[#e9ecef] mb-4"></div>
           <div className="flex justify-between items-center text-[0.8rem] py-1.5">
-            <span className="text-[#adb5bd]">Status</span>
-            <span className="bg-[#e8f5ee] text-[#3d7a5a] text-[0.72rem] px-2.5 py-0.5 rounded-full font-semibold">Open to Opportunities</span>
+            <span className="text-[#adb5bd]">目前狀態</span>
+            <span className="bg-[#e8f5ee] text-[#3d7a5a] text-[0.72rem] px-2.5 py-0.5 rounded-full font-semibold">開放中</span>
           </div>
           <div className="flex justify-between items-center text-[0.8rem] py-1.5">
-            <span className="text-[#adb5bd]">Email</span>
+            <span className="text-[#adb5bd]">電子郵件</span>
             <span className="font-semibold text-[0.74rem]">amanda840604@gmail.com</span>
           </div>
           <div className="flex justify-between items-center text-[0.8rem] py-1.5">
-            <span className="text-[#adb5bd]">Phone</span>
+            <span className="text-[#adb5bd]">聯絡電話</span>
             <span className="font-semibold text-[0.74rem]">0918-190-990</span>
           </div>
           <div className="flex justify-between items-center text-[0.8rem] py-1.5">
@@ -1265,7 +1265,7 @@ export default function App() {
               whileTap={{ scale: 0.95 }}
               className="font-bold text-[0.7rem] text-[#3d7a5a] bg-[#e8f5ee] px-3 py-1 rounded-full border border-[#c8d8cf] hover:bg-[#3d7a5a] hover:text-white transition-colors"
             >
-              Add Friend
+              加為好友
             </motion.a>
           </div>
         </aside>
@@ -1351,7 +1351,7 @@ export default function App() {
                       ))
                     ) : (
                       <div className="p-8 text-center h-[300px] flex items-center justify-center bg-white rounded-lg text-[#adb5bd] font-semibold border-2 border-dashed border-[#dee2e6]">
-                        No photos uploaded yet
+                        尚未上傳照片
                       </div>
                     )}
                   </div>
@@ -1363,7 +1363,7 @@ export default function App() {
                 {lightboxCourse && lightboxCourse.outcomes && (
                   <div className="mt-4">
                     <h4 className="text-[#3d7a5a] font-bold mb-2 flex items-center gap-2">
-                      <Target size={14} /> Learning Objectives & Modules
+                      <Target size={14} /> 學習重點與模組
                     </h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                       {lightboxCourse.outcomes.map((outcome: string, idx: number) => (
