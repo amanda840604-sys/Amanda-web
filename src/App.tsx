@@ -160,7 +160,7 @@ const EXP_DATA = [
   {
     role:'包裝工程師', co:'美律實業股份有限公司', period:'2022/7～2025/05・2年11個月',
     loc:'台中市南屯區・精密儀器相關製造業 500人以上',
-    logo: '/assets_img/images/merry-logo.jpg',
+    logo: '/assets_img/images/merry_logo.jpg',
     duties:['消費性電子產品包裝開發工作、包裝相關提案與結構設計','新機型產品包材圖面繪製、包裝作業流程製作','包裝廠商樣品追蹤、品質問題改善確認'],
     results:[
       '國際品牌 TWS / HDT / Soundbar 包裝設計提案（共 25 件）',
@@ -803,7 +803,7 @@ export default function App() {
             {[
               { name: 'SolidWorks', logo: '/assets_img/images/solidworks-logo.jpg' },
               { name: 'Creo', logo: '/assets_img/images/creo-logo.png' },
-              { name: 'KeyShot', logo: '/assets_img/images/keyshot-logo.jpg' },
+              { name: 'KeyShot', logo: '/static/images/keyshot-logo-1.jpg' },
               { name: 'Illustrator', logo: '/assets_img/images/illustrator-logo.jpg' },
               { name: 'Photoshop', logo: '/assets_img/images/photoshop-logo-2015.jpg' },
               { name: 'InDesign', logo: '/assets_img/images/adobe-indesign-logo.png' },
