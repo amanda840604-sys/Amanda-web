@@ -106,17 +106,6 @@ const COURSES = [
   },
   {
     cat: 'ai', 
-    title:'AI 應用實務系列課程(NUVA)',
-    sub:'ChatGPT LV.1 & MAKE LV.1',
-    org:'NUVA',
-    date:'2025.03 – 2025.04',
-    hours:'16 小時',
-    desc:'學習建立 AI 機器人與 LINE 官方帳號整合應用，實現品牌溝通自動化。',
-    outcomes: ['ChatGPT 進階指令技巧', 'MAKE 自動化工作流建置', 'LINE Bot 整合應用', 'AI 內容生成策略'],
-    images: ['/chat gpt lv1.JPG', '/make lv1.JPG', '/NUVA 創辦人林上哲 課後合影.jpg']
-  },
-  {
-    cat: 'ai', 
     title:'在職菁英 AI 人才培育課程',
     sub:'',
     org:'114年度經濟部產業發展屬補助課程',
@@ -136,6 +125,17 @@ const COURSES = [
     desc:'系統化學習 AI 導入、規劃與應用情境建構，強化跨領域數位工具整合能力。（正在培訓中，尚未取得證書）',
     outcomes: ['AI 應用場景規劃', '數位轉型策略制定', 'AI 工具鏈整合', '證照考試重點解析'],
     images: ['/iPAS AI應用規劃師初級證照班課程_ccchen.jpg']
+  },
+  {
+    cat: 'ai', 
+    title:'AI 應用實務系列課程(NUVA)',
+    sub:'ChatGPT LV.1 & MAKE LV.1',
+    org:'NUVA',
+    date:'2025.03 – 2025.04',
+    hours:'16 小時',
+    desc:'學習建立 AI 機器人與 LINE 官方帳號整合應用，實現品牌溝通自動化。',
+    outcomes: ['ChatGPT 進階指令技巧', 'MAKE 自動化工作流建置', 'LINE Bot 整合應用', 'AI 內容生成策略'],
+    images: ['/chat gpt lv1.JPG', '/make lv1.JPG', '/NUVA 創辦人林上哲 課後合影.jpg']
   },
   {
     cat: 'ai', 
@@ -762,12 +762,12 @@ export default function App() {
                 
                 <div className="space-y-3">
                   <div className="bg-[#f8f9fa] rounded-lg p-3 border border-[#e9ecef]">
-                    <div className="text-[11px] font-bold text-[#adb5bd] uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                    <div className="text-[12px] font-bold text-[#adb5bd] uppercase tracking-wider mb-2 flex items-center gap-1.5">
                       <Layers size={12} /> 核心組成與子技能
                     </div>
                     <div className="flex flex-wrap gap-2">
                       {skill.subSkills.map((sub: string, j: number) => (
-                        <span key={j} className="flex items-center gap-1 text-[10px] text-[#495057] bg-white border border-[#dee2e6] px-2 py-1 rounded-md shadow-sm">
+                        <span key={j} className="flex items-center gap-1 text-[12px] text-[#495057] bg-white border border-[#dee2e6] px-2 py-1 rounded-md shadow-sm">
                           <div className="w-1 h-1 rounded-full bg-[#3d7a5a]" />
                           {sub}
                         </span>
@@ -1092,7 +1092,7 @@ export default function App() {
                                       <div className="w-5 h-5 rounded-full bg-[#e8f5ee] text-[#3d7a5a] flex items-center justify-center shrink-0">
                                         <Check size={10} strokeWidth={3} />
                                       </div>
-                                      <span className="text-[11px] text-[#495057] font-medium leading-tight">{outcome}</span>
+                                      <span className="text-[12px] text-[#495057] font-medium leading-tight">{outcome}</span>
                                     </div>
                                   ))}
                                 </div>
