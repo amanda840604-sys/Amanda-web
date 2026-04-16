@@ -806,7 +806,7 @@ export default function App() {
               { name: 'KeyShot', logo: '/keyshot-logo.jpg' },
               { name: 'Illustrator', logo: '/illustrator-logo.jpg' },
               { name: 'Photoshop', logo: '/photoshop-logo-2015.jpg' },
-              { name: 'InDesign', logo: '/adobe-indesign-logo.png' },
+              { name: 'InDesign', logo: 'https://cdn.phototourl.com/free/2026-04-16-e41631ce-7792-47b0-8959-79877c7f5f44.png' },
               { name: 'AutoCAD', logo: '/autocad-logo-1.jpg' }
             ].map((t, i) => (
               <div key={i} className="flex items-center gap-2.5 p-2 rounded-lg border-2 border-[#e9ecef] bg-white hover:border-[#3d7a5a] transition-colors">
