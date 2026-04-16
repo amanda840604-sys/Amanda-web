@@ -86,9 +86,9 @@ const PROJECTS = [
   {id:'mtb',cat:'packaging',subcat:'bike',title:'MTB Handle Bar 包裝設計',short:'MTB 車把手包裝設計',desc:'MTB 車把手三層瓦楞結構包裝，考量層板方案、正面紙板與包裝底座。',tags:['包裝設計','自行車','Handle Bar'], images: ['/MTB Handle Bar 包裝設計01.jpg', '/MTB Handle Bar 包裝設計02.jpg', '/MTB Handle Bar 包裝設計03.jpg', '/MTB Handle Bar 包裝設計04.png', '/MTB Handle Bar 包裝設計05.png', '/MTB Handle Bar 包裝設計06.png']},
   {id:'tr',cat:'packaging',subcat:'bike',title:'TR Handle Bar 包裝設計',short:'TR 車把手包裝設計',desc:'TR Handle Bar 包裝結構設計，統整行李方案、正面紙板至包裝底座完整流程。',tags:['包裝設計','自行車'], images: ['/TR Handle Bar 包裝設計01.jpg', '/TR Handle Bar 包裝設計02.jpg', '/TR Handle Bar 包裝設計03.jpg', '/TR Handle Bar 包裝設計04.jpg', '/TR Handle Bar 包裝設計05.jpg', '/TR Handle Bar 包裝設計06.png', '/TR Handle Bar 包裝設計07.png', '/TR Handle Bar 包裝設計08.png']},
   {id:'ra',cat:'packaging',subcat:'bike',title:'RA Handle Bar 包裝設計',short:'RA 車把手包裝設計',desc:'RA Handle Bar 系列包裝設計，涵蓋運輸、展示與量產導入規格。',tags:['包裝設計','自行車'], images: ['/RA Handle Bar 包裝設計01.png', '/RA Handle Bar 包裝設計02.png', '/RA Handle Bar 包裝設計03.png', '/RA Handle Bar 包裝設計04.png', '/RA Handle Bar 包裝設計05.png', '/RA Handle Bar 包裝設計06.png', '/RA Handle Bar 包裝設計07.png']},
-  {id:'seatpost',cat:'packaging',subcat:'bike',title:'座管 包裝設計',short:'座管包裝結構設計',desc:'自行車座管包裝結構設計，針對細長零件開發全紙質緩衝方案。',tags:['包裝設計','自行車','減塑'], images: []},
-  {id:'steerer',cat:'packaging',subcat:'bike',title:'立管 包裝設計',short:'立管包裝結構設計',desc:'立管包裝設計，開發輕量化、可回收包材方案。',tags:['包裝設計','自行車'], images: []},
-  {id:'quickrelease',cat:'packaging',subcat:'bike',title:'快拆束仔 包裝設計',short:'快拆束仔包裝設計',desc:'快拆束仔小零件包裝設計，兼顧防護性與零售展示需求。',tags:['包裝設計','自行車'], images: []},
+  {id:'seatpost',cat:'packaging',subcat:'bike',title:'座管 包裝設計',short:'座管包裝結構設計',desc:'自行車座管包裝結構設計，針對細長零件開發全紙質緩衝方案。',tags:['包裝設計','自行車','減塑'], images: ['/座管包裝設計01.jpg', '/座管包裝設計02.jpg', '/座管包裝設計03.jpg', '/座管包裝設計04.jpg', '/座管包裝設計05.jpg', '/座管包裝設計06.jpg', '/座管包裝設計07.jpg', '/座管包裝設計08.jpg', '/座管包裝設計09.jpg']},
+  {id:'steerer',cat:'packaging',subcat:'bike',title:'立管 包裝設計',short:'立管包裝結構設計',desc:'立管包裝設計，開發輕量化、可回收包材方案。',tags:['包裝設計','自行車'], images: ['/立管包裝設計01.jpg', '/立管包裝設計02.jpg', '/立管包裝設計03.jpg', '/立管包裝設計04.jpg', '/立管包裝設計05.jpg']},
+  {id:'quickrelease',cat:'packaging',subcat:'bike',title:'快拆束仔 包裝設計',short:'快拆束仔包裝設計',desc:'快拆束仔小零件包裝設計，兼顧防護性與零售展示需求。',tags:['包裝設計','自行車'], images: ['/快拆束仔包裝設計 01.jpg', '/快拆束仔包裝設計 02.jpg', '/快拆束仔包裝設計 03.jpg', '/快拆束仔包裝設計 04.jpg']},
   {id:'graphic',cat:'graphic',subcat:'branding',title:'平面設計',short:'品牌CIS / 海報 / 識別物料',desc:'品牌視覺識別系統（CIS）、海報設計與企業識別物料整合輸出。',tags:['品牌設計','平面','CIS'], images: ['/海報設計.jpg']}
 ];
 
