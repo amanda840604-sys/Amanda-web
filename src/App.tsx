@@ -135,7 +135,7 @@ const COURSES = [
     hours:'16 小時',
     desc:'學習建立 AI 機器人與 LINE 官方帳號整合應用，實現品牌溝通自動化。',
     outcomes: ['ChatGPT 進階指令技巧', 'MAKE 自動化工作流建置', 'LINE Bot 整合應用', 'AI 內容生成策略'],
-    images: ['/chat gpt lv1.JPG', '/make lv1.JPG', '/NUVA 創辦人林上哲 課後合影.jpg']
+    images: ['/chat-gpt-lv1.jpg', '/make-lv1.jpg', '/nuva-group-photo.jpg']
   },
   {
     cat: 'ai', 
@@ -224,7 +224,7 @@ const TABS = [
 
 const AvatarSVG = () => (
   <img 
-    src="/Profolio_photo.jpg" 
+    src="/profile.jpg" 
     alt="賴以婕 Amanda" 
     className="w-full h-full object-cover"
     referrerPolicy="no-referrer"
@@ -693,7 +693,7 @@ export default function App() {
           <div className="flex gap-3 items-center">
             <div className="w-10 flex justify-center shrink-0">
               <div className="w-10 h-10 rounded-lg bg-white border border-[#e9ecef] shrink-0 flex items-center justify-center overflow-hidden relative group">
-                <img src="/台科大_LOGO.png" alt="國立臺灣科技大學" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" />
+                <img src="/ntust-logo.png" alt="國立臺灣科技大學" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" />
               </div>
             </div>
             <div>
@@ -704,7 +704,7 @@ export default function App() {
           <div className="flex gap-3 items-center">
             <div className="w-10 flex justify-center shrink-0">
               <div className="w-10 h-10 rounded-lg bg-white border border-[#e9ecef] shrink-0 flex items-center justify-center overflow-hidden relative group">
-                <img src="/台中高工_LOGO.jpg" alt="國立台中高工" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" />
+                <img src="/tcivs-logo.jpg" alt="國立台中高工" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" />
               </div>
             </div>
             <div>
