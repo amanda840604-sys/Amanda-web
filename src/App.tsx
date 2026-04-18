@@ -85,7 +85,7 @@ const PROJECTS = [
   {id:'carrycase',cat:'packaging',subcat:'bike',title:'Carrycase 包袋設計',short:'收納包袋結構設計',desc:'自行車零件收納包袋設計，考量多 SKU 共用與模組化包裝平台。',tags:['包裝設計','自行車'], images: ['/carrcase01.jpg']},
   {id:'mtb',cat:'packaging',subcat:'bike',title:'MTB Handle Bar 包裝設計',short:'MTB 車把手包裝設計',desc:'MTB 車把手三層瓦楞結構包裝，考量層板方案、正面紙板與包裝底座。',tags:['包裝設計','自行車','Handle Bar'], images: ['/mtb_handle_bar01.jpg', '/mtb_handle_bar02.jpg', '/mtb_handle_bar03.jpg', '/mtb_handle_bar04.png', '/mtb_handle_bar05.png', '/mtb_handle_bar06.png']},
   {id:'tr',cat:'packaging',subcat:'bike',title:'TR Handle Bar 包裝設計',short:'TR 車把手包裝設計',desc:'TR Handle Bar 包裝結構設計，統整行李方案、正面紙板至包裝底座完整流程。',tags:['包裝設計','自行車'], images: ['/tr_handle_bar01.jpg', '/tr_handle_bar02.jpg', '/tr_handle_bar03.jpg', '/tr_handle_bar04.jpg', '/tr_handle_bar05.jpg', '/tr_handle_bar06.png', '/tr_handle_bar07.png', '/tr_handle_bar08.png']},
-  {id:'ra',cat:'packaging',subcat:'bike',title:'RA Handle Bar 包裝設計',short:'RA 車把手包裝設計',desc:'RA Handle Bar 系列包裝設計，涵蓋運輸、展示與量產導入規格。',tags:['包裝設計','自行車'], images: ['/RA_handle_bar01.png', '/RA_handle_bar02.png', '/RA_handle_bar03.png', '/RA_handle_bar04.png', '/RA_handle_bar05.png', '/RA_handle_bar06.png', '/RA_handle_bar07.png']},
+  {id:'ra',cat:'packaging',subcat:'bike',title:'RA Handle Bar 包裝設計',short:'RA 車把手包裝設計',desc:'RA Handle Bar 系列包裝設計，涵蓋運輸、展示與量產導入規格。',tags:['包裝設計','自行車'], images: ['/RA_handle_bar01.png', '/RA_handle_bar02.png', '/RA_handle_bar03.png', '/RA_handle_bar04.png', '/RA_handle_bar06.png', '/RA_handle_bar07.png']},
   {id:'seatpost',cat:'packaging',subcat:'bike',title:'座管 包裝設計',short:'座管包裝結構設計',desc:'自行車座管包裝結構設計，針對細長零件開發全紙質緩衝方案。',tags:['包裝設計','自行車','減塑'], images: ['/seatpost01.jpg', '/seatpost02.jpg', '/seatpost03.jpg', '/seatpost04.jpg', '/seatpost05.jpg', '/seatpost06.jpg', '/seatpost07.jpg', '/seatpost08.jpg', '/seatpost09.jpg']},
   {id:'steerer',cat:'packaging',subcat:'bike',title:'立管 包裝設計',short:'立管包裝結構設計',desc:'立管包裝設計，開發輕量化、可回收包材方案。',tags:['包裝設計','自行車'], images: ['/steerer01.jpg', '/steerer02.jpg', '/steerer03.jpg', '/steerer04.jpg', '/steerer05.jpg']},
   {id:'quickrelease',cat:'packaging',subcat:'bike',title:'快拆束仔 包裝設計',short:'快拆束仔包裝設計',desc:'快拆束仔小零件包裝設計，兼顧防護性與零售展示需求。',tags:['包裝設計','自行車'], images: ['/quickrelease01.jpg', '/quickrelease02.jpg', '/quickrelease03.jpg', '/quickrelease04.jpg']},
@@ -135,7 +135,7 @@ const COURSES = [
     hours:'16 小時',
     desc:'學習建立 AI 機器人與 LINE 官方帳號整合應用，實現品牌溝通自動化。',
     outcomes: ['ChatGPT 進階指令技巧', 'MAKE 自動化工作流建置', 'LINE Bot 整合應用', 'AI 內容生成策略'],
-    images: ['/chat gpt lv1.JPG', '/make lv1.JPG', '/nuva.jpg']
+    images: ['/chat gpt lv1.jpg', '/make lv1.jpg', '/nuva.jpg']
   },
   {
     cat: 'ai', 
