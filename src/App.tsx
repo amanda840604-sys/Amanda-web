@@ -160,7 +160,7 @@ const EXP_DATA = [
   {
     role:'包裝工程師', co:'美律實業股份有限公司', period:'2022/7～2025/05・2年11個月',
     loc:'台中市南屯區・精密儀器相關製造業 500人以上',
-    logo: './images/merry_logo.jpg',
+    logo: './images/merry_logo-1.jpg',
     duties:['消費性電子產品包裝開發工作、包裝相關提案與結構設計','新機型產品包材圖面繪製、包裝作業流程製作','包裝廠商樣品追蹤、品質問題改善確認'],
     results:[
       '國際品牌 TWS / HDT / Soundbar 包裝設計提案（共 25 件）',
@@ -224,7 +224,7 @@ const TABS = [
 
 const AvatarSVG = () => (
   <img 
-    src='./images/profile.jpg' 
+    src='./images/Profolio_photo.jpg' 
     alt="賴以婕 Amanda" 
     className="w-full h-full object-cover"
     referrerPolicy="no-referrer"
