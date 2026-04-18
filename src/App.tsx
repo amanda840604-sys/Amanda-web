@@ -70,26 +70,26 @@ const INITIAL_SKILLS = [
 ];
 
 const PROJECTS = [
-  {id:'hood',cat:'product',subcat:'appliance',title:'油煙機設計',short:'薄化歐化油煙機、近吸油煙機系列',desc:'為 SAKURA 品牌設計薄化歐化油煙機（2020）及近吸油煙機（2022）、歐化油煙機（2021）系列。涵蓋外觀造型、CMF 規格、結構工程圖及量產驗證，兼顧空氣動力學效能與現代廚房美學。',tags:['產品設計','廚房家電','SAKURA'], images: ['/hood_euro01.jpg', '/hood_euro02.jpg', '/hood_side_suction.jpg']},
-  {id:'gas',cat:'product',subcat:'appliance',title:'瓦斯爐設計',short:'嵌入式瓦斯爐工業設計',desc:'嵌入式瓦斯爐工業設計，強調人因操作介面與安全結構整合，完成旋鈕、爐架與玻璃面板之 CMF 規格輸出。',tags:['產品設計','家電'], images: ['/stove_easy_clean.jpg']},
-  {id:'wearable',cat:'product',subcat:'medical',title:'穿戴式裝置設計',short:'睡眠監測智慧手環',desc:'睡眠監測智慧手環設計，整合感測模組與舒適穿戴結構，完成 CMF 規格及爆炸圖輸出。',tags:['穿戴裝置','醫療'], images: ['/wearable01.jpg', '/wearable02.jpg', '/wearable03.jpg', '/wearable04.jpg']},
-  {id:'medical',cat:'product',subcat:'medical',title:'醫療器材設計',short:'低頻治療儀 / 霧化器 / SPO2 手環',desc:'包含低周波治療器 2 款外觀提案、兒童用霧化器外觀提案及 SPO2 手環 5 款外觀提案，完成外觀造型、爆炸圖與量產工程規格文件。',tags:['醫療器材','工業設計'], images: ['/medical02.jpg']},
-  {id:'toy',cat:'product',subcat:'toy',title:'玩具設計',short:'兒童益智玩具系列',desc:'兒童益智玩具系列設計，包含角色造型、結構拼組與安全材質規劃。',tags:['玩具設計','CMF'], images: ['/toy_design.jpg']},
-  {id:'sketch',cat:'product',subcat:'sketch',title:'手繪作品',short:'人物速寫 / 產品草圖 / 概念插畫',desc:'人物速寫、產品草圖與概念插畫，展現設計思維與手感表達能力。',tags:['手繪','插畫'], images: ['/sketch.jpg']},
-  {id:'tws_card',cat:'packaging',subcat:'ce',title:'TWS 紙卡內襯設計',short:'TWS 耳機紙卡內襯方案總覽',desc:'針對 TWS 耳機系列開發紙卡內襯，彙整多種結構選項，形成模組化設計資料庫。',tags:['包裝設計','TWS','紙卡'], images: ['/tws_card_inner01.png', '/tws_card_inner02.png', '/tws_card_inner03.png', '/tws_card_inner04.png', '/tws_card_inner05.png', '/tws_card_inner06.png', '/tws_card_inner07.png', '/tws_card_inner08.png', '/tws_card_inner09.png', '/tws_card_inner10.png', '/tws_card_inner11.png', '/tws_card_inner12.png']},
-  {id:'tws_pkg',cat:'packaging',subcat:'ce',title:'TWS 包裝設計',short:'TWS 耳機完整包裝設計',desc:'為國際品牌 TWS 耳機設計完整包材，包含外箱、內裝結構與印刷規格。',tags:['包裝設計','消費電子'], images: ['/tws_package_design01.jpg', '/tws_package_design02.jpg']},
-  {id:'hdt_card',cat:'packaging',subcat:'ce',title:'HDT 紙卡內襯設計',short:'電競耳機包裝結構方案',desc:'HDT 電競耳機紙卡內襯設計，提出多選項比較方案，支援 RFQ 提案決策。',tags:['包裝設計','HDT'], images: ['/hdt_card01.jpg', '/hdt_card02.jpg', '/hdt_card03.jpg', '/hdt_card04.jpg', '/hdt_card05.jpg', '/hdt_card06.jpg', '/hdt_card07.jpg', '/hdt_card08.jpg', '/hdt_card09.jpg', '/hdt_card10.jpg', '/hdt_card11.jpg', '/hdt_card12.jpg', '/hdt_card13.jpg', '/hdt_card14.jpg']},
-  {id:'soundbar_card',cat:'packaging',subcat:'ce',title:'Soundbar 紙卡內襯設計',short:'Soundbar 包裝內構設計',desc:'Soundbar 紙卡內襯結構設計，考量產品尺寸與跌落保護需求。',tags:['包裝設計','Soundbar'], images: ['/soundbar_card_inner01.png', '/soundbar_card_inner02.png', '/soundbar_card_inner03.png', '/soundbar_card_inner04.jpg', '/soundbar_card_inner05.jpg', '/soundbar_card_inner06.jpg', '/soundbar_card_inner07.jpg', '/soundbar_card_inner08.jpg']},
-  {id:'soundbar_pkg',cat:'packaging',subcat:'ce',title:'Soundbar 設計',short:'Soundbar 整體包裝方案',desc:'Speaker Packaging Design，採用 Harvest Foam Dry-Pressed Pulp Tray，整合環保材質與品牌呈現。',tags:['包裝設計','永續','Soundbar'], images: ['/soundbar_design01.jpg']},
-  {id:'webcam',cat:'packaging',subcat:'ce',title:'視訊鏡頭包裝設計',short:'Webcam Packaging Design',desc:'視訊鏡頭包裝設計，採 Black Wet-Pressed Pulp Tray，兼顧防護與環保需求。',tags:['包裝設計','紙托'], images: ['/webcam01.jpg', '/webcam02.jpg']},
-  {id:'carrycase',cat:'packaging',subcat:'bike',title:'Carrycase 包袋設計',short:'收納包袋結構設計',desc:'自行車零件收納包袋設計，考量多 SKU 共用與模組化包裝平台。',tags:['包裝設計','自行車'], images: ['/carrycase01.jpg']},
+  {id:'hood',cat:'product',subcat:'appliance',title:'油煙機設計',short:'薄化歐化油煙機、近吸油煙機系列',desc:'為 SAKURA 品牌設計薄化歐化油煙機（2020）及近吸油煙機（2022）、歐化油煙機（2021）系列。涵蓋外觀造型、CMF 規格、結構工程圖及量產驗證，兼顧空氣動力學效能與現代廚房美學。',tags:['產品設計','廚房家電','SAKURA'], images: ['/rangehood01.jpg', '/rangehood02.jpg', '/rangehood03.jpg']},
+  {id:'gas',cat:'product',subcat:'appliance',title:'瓦斯爐設計',short:'嵌入式瓦斯爐工業設計',desc:'嵌入式瓦斯爐工業設計，強調人因操作介面與安全結構整合，完成旋鈕、爐架與玻璃面板之 CMF 規格輸出。',tags:['產品設計','家電'], images: ['/g252201.jpg']},
+  {id:'wearable',cat:'product',subcat:'medical',title:'穿戴式裝置設計',short:'睡眠監測智慧手環',desc:'睡眠監測智慧手環設計，整合感測模組與舒適穿戴結構，完成 CMF 規格及爆炸圖輸出。',tags:['穿戴裝置','醫療'], images: ['/sleep_monitor_device01.jpg', '/sleep_monitor_device02.jpg', '/sleep_monitor_device03.jpg', '/sleep_monitor_device04.jpg']},
+  {id:'medical',cat:'product',subcat:'medical',title:'醫療器材設計',short:'低頻治療儀 / 霧化器 / SPO2 手環',desc:'包含低周波治療器 2 款外觀提案、兒童用霧化器外觀提案及 SPO2 手環 5 款外觀提案，完成外觀造型、爆炸圖與量產工程規格文件。',tags:['醫療器材','工業設計'], images: ['/emg01.jpg']},
+  {id:'toy',cat:'product',subcat:'toy',title:'玩具設計',short:'兒童益智玩具系列',desc:'兒童益智玩具系列設計，包含角色造型、結構拼組與安全材質規劃。',tags:['玩具設計','CMF'], images: ['/cic_toy.jpg']},
+  {id:'sketch',cat:'product',subcat:'sketch',title:'手繪作品',short:'人物速寫 / 產品草圖 / 概念插畫',desc:'人物速寫、產品草圖與概念插畫，展現設計思維與手感表達能力。',tags:['手繪','插畫'], images: ['/draw.jpg']},
+  {id:'tws_card',cat:'packaging',subcat:'ce',title:'TWS 紙卡內襯設計',short:'TWS 耳機紙卡內襯方案總覽',desc:'針對 TWS 耳機系列開發紙卡內襯，彙整多種結構選項，形成模組化設計資料庫。',tags:['包裝設計','TWS','紙卡'], images: ['/tws_innercard01.png', '/tws_innercard02.png', '/tws_innercard03.png', '/tws_innercard04.png', '/tws_innercard05.png', '/tws_innercard06.png', '/tws_innercard07.png', '/tws_innercard08.png', '/tws_innercard9.png', '/tws_innercard10.png', '/tws_innercard11.png', '/tws_innercard12.png']},
+  {id:'tws_pkg',cat:'packaging',subcat:'ce',title:'TWS 包裝設計',short:'TWS 耳機完整包裝設計',desc:'為國際品牌 TWS 耳機設計完整包材，包含外箱、內裝結構與印刷規格。',tags:['包裝設計','消費電子'], images: ['/tws_pkg_design01.jpg', '/tws_pkg_design02.jpg']},
+  {id:'hdt_card',cat:'packaging',subcat:'ce',title:'HDT 紙卡內襯設計',short:'電競耳機包裝結構方案',desc:'HDT 電競耳機紙卡內襯設計，提出多選項比較方案，支援 RFQ 提案決策。',tags:['包裝設計','HDT'], images: ['/hdt_inner_card01.jpg', '/hdt_inner_card02.jpg', '/hdt_inner_card03.jpg', '/hdt_inner_card04.jpg', '/hdt_inner_card05.jpg', '/hdt_inner_card06.jpg', '/hdt_inner_card07.jpg', '/hdt_inner_card08.jpg', '/hdt_inner_card09.jpg', '/hdt_inner_card10.jpg', '/hdt_inner_card11.jpg', '/hdt_inner_card12.jpg', '/hdt_inner_card13.jpg', '/hdt_inner_card14.jpg']},
+  {id:'soundbar_card',cat:'packaging',subcat:'ce',title:'Soundbar 紙卡內襯設計',short:'Soundbar 包裝內構設計',desc:'Soundbar 紙卡內襯結構設計，考量產品尺寸與跌落保護需求。',tags:['包裝設計','Soundbar'], images: ['/soundbar_inner_card01.png', '/soundbar_inner_card02.png', '/soundbar_inner_card03.png', '/soundbar_inner_card04.jpg', '/soundbar_inner_card05.jpg', '/soundbar_inner_card06.jpg', '/soundbar_inner_card07.jpg', '/soundbar_inner_card08.jpg']},
+  {id:'soundbar_pkg',cat:'packaging',subcat:'ce',title:'Soundbar 設計',short:'Soundbar 整體包裝方案',desc:'Speaker Packaging Design，採用 Harvest Foam Dry-Pressed Pulp Tray，整合環保材質與品牌呈現。',tags:['包裝設計','永續','Soundbar'], images: ['/soundbar01.jpg']},
+  {id:'webcam',cat:'packaging',subcat:'ce',title:'視訊鏡頭包裝設計',short:'Webcam Packaging Design',desc:'視訊鏡頭包裝設計，採 Black Wet-Pressed Pulp Tray，兼顧防護與環保需求。',tags:['包裝設計','紙托'], images: ['/camera_pkg_001.jpg', '/camera_pkg_002.jpg']},
+  {id:'carrycase',cat:'packaging',subcat:'bike',title:'Carrycase 包袋設計',short:'收納包袋結構設計',desc:'自行車零件收納包袋設計，考量多 SKU 共用與模組化包裝平台。',tags:['包裝設計','自行車'], images: ['/carrcase01.jpg']},
   {id:'mtb',cat:'packaging',subcat:'bike',title:'MTB Handle Bar 包裝設計',short:'MTB 車把手包裝設計',desc:'MTB 車把手三層瓦楞結構包裝，考量層板方案、正面紙板與包裝底座。',tags:['包裝設計','自行車','Handle Bar'], images: ['/mtb_handle_bar01.jpg', '/mtb_handle_bar02.jpg', '/mtb_handle_bar03.jpg', '/mtb_handle_bar04.png', '/mtb_handle_bar05.png', '/mtb_handle_bar06.png']},
   {id:'tr',cat:'packaging',subcat:'bike',title:'TR Handle Bar 包裝設計',short:'TR 車把手包裝設計',desc:'TR Handle Bar 包裝結構設計，統整行李方案、正面紙板至包裝底座完整流程。',tags:['包裝設計','自行車'], images: ['/tr_handle_bar01.jpg', '/tr_handle_bar02.jpg', '/tr_handle_bar03.jpg', '/tr_handle_bar04.jpg', '/tr_handle_bar05.jpg', '/tr_handle_bar06.png', '/tr_handle_bar07.png', '/tr_handle_bar08.png']},
-  {id:'ra',cat:'packaging',subcat:'bike',title:'RA Handle Bar 包裝設計',short:'RA 車把手包裝設計',desc:'RA Handle Bar 系列包裝設計，涵蓋運輸、展示與量產導入規格。',tags:['包裝設計','自行車'], images: ['/ra_handle_bar01.png', '/ra_handle_bar02.png', '/ra_handle_bar03.png', '/ra_handle_bar04.png', '/ra_handle_bar05.png', '/ra_handle_bar06.png', '/ra_handle_bar07.png']},
+  {id:'ra',cat:'packaging',subcat:'bike',title:'RA Handle Bar 包裝設計',short:'RA 車把手包裝設計',desc:'RA Handle Bar 系列包裝設計，涵蓋運輸、展示與量產導入規格。',tags:['包裝設計','自行車'], images: ['/RA_handle_bar01.png', '/RA_handle_bar02.png', '/RA_handle_bar03.png', '/RA_handle_bar04.png', '/RA_handle_bar05.png', '/RA_handle_bar06.png', '/RA_handle_bar07.png']},
   {id:'seatpost',cat:'packaging',subcat:'bike',title:'座管 包裝設計',short:'座管包裝結構設計',desc:'自行車座管包裝結構設計，針對細長零件開發全紙質緩衝方案。',tags:['包裝設計','自行車','減塑'], images: ['/seatpost01.jpg', '/seatpost02.jpg', '/seatpost03.jpg', '/seatpost04.jpg', '/seatpost05.jpg', '/seatpost06.jpg', '/seatpost07.jpg', '/seatpost08.jpg', '/seatpost09.jpg']},
   {id:'steerer',cat:'packaging',subcat:'bike',title:'立管 包裝設計',short:'立管包裝結構設計',desc:'立管包裝設計，開發輕量化、可回收包材方案。',tags:['包裝設計','自行車'], images: ['/steerer01.jpg', '/steerer02.jpg', '/steerer03.jpg', '/steerer04.jpg', '/steerer05.jpg']},
   {id:'quickrelease',cat:'packaging',subcat:'bike',title:'快拆束仔 包裝設計',short:'快拆束仔包裝設計',desc:'快拆束仔小零件包裝設計，兼顧防護性與零售展示需求。',tags:['包裝設計','自行車'], images: ['/quickrelease01.jpg', '/quickrelease02.jpg', '/quickrelease03.jpg', '/quickrelease04.jpg']},
-  {id:'graphic',cat:'graphic',subcat:'branding',title:'平面設計',short:'品牌CIS / 海報 / 識別物料',desc:'品牌視覺識別系統（CIS）、海報設計與企業識別物料整合輸出。',tags:['品牌設計','平面','CIS'], images: ['/poster_design.jpg']}
+  {id:'graphic',cat:'graphic',subcat:'branding',title:'平面設計',short:'品牌CIS / 海報 / 識別物料',desc:'品牌視覺識別系統（CIS）、海報設計與企業識別物料整合輸出。',tags:['品牌設計','平面','CIS'], images: ['/post_design.jpg']}
 ];
 
 const COURSES = [
@@ -102,7 +102,7 @@ const COURSES = [
     hours:'48 小時',
     desc:'聚集包裝結構設計、運輸測試與成本優化方法，提升包材選型與量產導入判斷能力。',
     outcomes: ['包裝結構力學分析', 'ISTA 運輸測試標準', '包裝材料成本估算', '永續包材選用指南'],
-    images: ['/course-packaging.png', '/course-packaging-photo.jpg']
+    images: ['/course_pkg01.png', '/course_pkg02.jpg']
   },
   {
     cat: 'ai', 
@@ -113,7 +113,7 @@ const COURSES = [
     hours:'30 小時',
     desc:'學習 AI 基礎概論與架構、機器學習（監督式/非監督式學習）技術理論與案例、以及生成式 AI 的原理與應用。',
     outcomes: ['機器學習基礎理論', '生成式 AI 技術原理', '產業 AI 導入案例分析', 'AI 模型評估與優化'],
-    images: ['/course-ai-talent.png']
+    images: ['/course_ai_ccchen.jpg', '/course_ai_20251209-1217.png']
   },
   {
     cat: 'ai', 
@@ -124,7 +124,7 @@ const COURSES = [
     hours:'48 小時',
     desc:'系統化學習 AI 導入、規劃與應用情境建構，強化跨領域數位工具整合能力。（正在培訓中，尚未取得證書）',
     outcomes: ['AI 應用場景規劃', '數位轉型策略制定', 'AI 工具鏈整合', '證照考試重點解析'],
-    images: ['/ipas-ai-planning-cert.jpg']
+    images: []
   },
   {
     cat: 'ai', 
@@ -135,7 +135,7 @@ const COURSES = [
     hours:'16 小時',
     desc:'學習建立 AI 機器人與 LINE 官方帳號整合應用，實現品牌溝通自動化。',
     outcomes: ['ChatGPT 進階指令技巧', 'MAKE 自動化工作流建置', 'LINE Bot 整合應用', 'AI 內容生成策略'],
-    images: ['/chat-gpt-lv1.jpg', '/make-lv1.jpg', '/nuva-group-photo.jpg']
+    images: ['/chat gpt lv1.JPG', '/make lv1.JPG', '/nuva.jpg']
   },
   {
     cat: 'ai', 
@@ -146,7 +146,7 @@ const COURSES = [
     hours:'15 小時',
     desc:'學習 AI 基礎應用與規劃，掌握商業場景下的 AI 導入實務。',
     outcomes: ['AI 基礎概論', '商業應用場景分析', 'AI 規劃實務', '案例研究'],
-    images: ['/ipas-ai-planning-basic.jpg']
+    images: ['/course_ai_20260308-0322.jpg']
   }
 ];
 
@@ -172,7 +172,7 @@ const EXP_DATA = [
   {
     role:'產品設計師', co:'台灣櫻花股份有限公司', period:'2020/3～2022/7・2年5個月',
     loc:'台中市大雅區・非金屬家具及裝設品製造業 500人以上',
-    logo: '/sakura-logo.png',
+    logo: '/sakura_logo.png',
     duties:['針對 PM 市場規劃結合消費者調查結果擬定設計方向','跨部門協作經驗','國內外廚電市場與造型趨勢調研'],
     results:[
       '2021 年度績優員工',
@@ -184,7 +184,7 @@ const EXP_DATA = [
   {
     role:'產品設計師', co:'上岳科技股份有限公司', period:'2018/11～2019/12・1年2個月',
     loc:'台中市南屯區・醫療器材製造業 30–100人',
-    logo: '/emg-logo.png',
+    logo: '/emg_logo.png',
     duties:['新品提案與簡報製作','依據 RD 提供模組進行產品設計提案，含視覺、材質規劃與造型風格定調','產品造型設計'],
     results:[
       '低周波治療器 2 款外觀提案',
@@ -196,7 +196,7 @@ const EXP_DATA = [
   {
     role:'產品設計師', co:'研成股份有限公司', period:'2017/8～2018/8・1年1個月',
     loc:'新北市新店區・專門設計相關業 30–100人',
-    logo: '/cic-logo.png',
+    logo: '/cic-logo.png.png',
     duties:['新品提案與簡報製作','依據 RD 提供模組進行產品設計提案','產品造型設計'],
     results:[
       '獨立負責日本學研 GAKKEN 委託之鋁製品設計案',
@@ -208,9 +208,9 @@ const EXP_DATA = [
 ];
 
 const INTERESTS = [
-  { id: 'gym', title: '重量訓練', icon: Dumbbell, goal: '目前每週2練，\n目標提升至每週4練！', desc: '訓練耐力與自律，堅持每一步小進步，挑戰更強的自己。', emojis: ['🏋️', '💪', '🏃', '⚡'], image: '/gym.jpg' },
+  { id: 'gym', title: '重量訓練', icon: Dumbbell, goal: '目前每週2練，\n目標提升至每週4練！', desc: '訓練耐力與自律，堅持每一步小進步，挑戰更強的自己。', emojis: ['🏋️', '💪', '🏃', '⚡'], image: '/fitness.jpg' },
   { id: 'marathon', title: '馬拉松', icon: Timer, goal: '5次半馬，\n目標完成人生第一場全馬！', desc: '目前有5次半馬的經驗，目標挑戰人生第一場全馬拉松，不只是體能，更是堅持信念的挑戰！', emojis: ['🏅', '🎽', '🏃‍♀️', '🥇'], image: '/marathon.jpg' },
-  { id: 'hiking', title: '登山', icon: Mountain, goal: '登頂2座百岳，\n目標持續挑戰台灣百岳全集！', desc: '除了健身與長跑，我也熱愛登山挑戰，目前已成功攀登兩座台灣百岳。', emojis: ['⛰️', '🌄', '🥾', '🗻'], image: '/hiking.jpg' }
+  { id: 'hiking', title: '登山', icon: Mountain, goal: '登頂2座百岳，\n目標持續挑戰台灣百岳全集！', desc: '除了健身與長跑，我也熱愛登山挑戰，目前已成功攀登兩座台灣百岳。', emojis: ['⛰️', '🌄', '🥾', '🗻'], image: '/mountain.jpg' }
 ];
 
 const TABS = [
