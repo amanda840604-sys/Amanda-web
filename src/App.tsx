@@ -160,7 +160,7 @@ const EXP_DATA = [
   {
     role:'包裝工程師', co:'美律實業股份有限公司', period:'2022/7～2025/05・2年11個月',
     loc:'台中市南屯區・精密儀器相關製造業 500人以上',
-    logo: '/merry_logo-1.jpg',
+    logo: '/merry_logo.jpg',
     duties:['消費性電子產品包裝開發工作、包裝相關提案與結構設計','新機型產品包材圖面繪製、包裝作業流程製作','包裝廠商樣品追蹤、品質問題改善確認'],
     results:[
       '國際品牌 TWS / HDT / Soundbar 包裝設計提案（共 25 件）',
@@ -693,7 +693,7 @@ export default function App() {
           <div className="flex gap-3 items-center">
             <div className="w-10 flex justify-center shrink-0">
               <div className="w-10 h-10 rounded-lg bg-white border border-[#e9ecef] shrink-0 flex items-center justify-center overflow-hidden relative group">
-                <img src='/ntust-logo.png' alt="國立臺灣科技大學" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img src='/ntust_logo.png' alt="國立臺灣科技大學" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
             </div>
             <div>
@@ -704,7 +704,7 @@ export default function App() {
           <div className="flex gap-3 items-center">
             <div className="w-10 flex justify-center shrink-0">
               <div className="w-10 h-10 rounded-lg bg-white border border-[#e9ecef] shrink-0 flex items-center justify-center overflow-hidden relative group">
-                <img src='/tcivs-logo.jpg' alt="國立台中高工" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img src='/tcivs_logo.jpg' alt="國立台中高工" className="w-full h-full object-contain p-1" referrerPolicy="no-referrer" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
             </div>
             <div>
@@ -801,13 +801,13 @@ export default function App() {
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8 pl-[52px]">
             {[
-              { name: 'SolidWorks', logo: '/solidworks-logo.jpg' },
-              { name: 'Creo', logo: '/creo-logo.png' },
+              { name: 'SolidWorks', logo: '/solidworks_logo.jpg' },
+              { name: 'Creo', logo: '/creo_logo.png' },
               { name: 'KeyShot', logo: '/keyshot-logo-2.jpg' },
-              { name: 'Illustrator', logo: '/illustrator-logo.jpg' },
-              { name: 'Photoshop', logo: '/photoshop-logo-2015.jpg' },
-              { name: 'InDesign', logo: '/adobe-indesign-logo.png' },
-              { name: 'AutoCAD', logo: '/autocad-logo-1.jpg' }
+              { name: 'Illustrator', logo: '/illustrator.jpg' },
+              { name: 'Photoshop', logo: '/photoshop_logo.jpg' },
+              { name: 'InDesign', logo: '/Indesign_logo.png' },
+              { name: 'AutoCAD', logo: '/autocad_logo.jpg' }
             ].map((t, i) => (
               <div key={i} className="flex items-center gap-2.5 p-2 rounded-lg border-2 border-[#e9ecef] bg-white hover:border-[#3d7a5a] transition-colors">
                 <div className="w-8 h-8 rounded bg-white flex items-center justify-center shrink-0 border border-[#e9ecef] overflow-hidden relative group">
