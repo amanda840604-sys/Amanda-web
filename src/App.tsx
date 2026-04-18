@@ -803,7 +803,7 @@ export default function App() {
             {[
               { name: 'SolidWorks', logo: '/solidworks-logo.jpg' },
               { name: 'Creo', logo: '/creo-logo.png' },
-              { name: 'KeyShot', logo: '/keyshot-logo.jpg' },
+              { name: 'KeyShot', logo: '/keyshot-logo-2.jpg' },
               { name: 'Illustrator', logo: '/illustrator-logo.jpg' },
               { name: 'Photoshop', logo: '/photoshop-logo-2015.jpg' },
               { name: 'InDesign', logo: '/adobe-indesign-logo.png' },
