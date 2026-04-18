@@ -113,7 +113,7 @@ const COURSES = [
     hours:'30 小時',
     desc:'學習 AI 基礎概論與架構、機器學習（監督式/非監督式學習）技術理論與案例、以及生成式 AI 的原理與應用。',
     outcomes: ['機器學習基礎理論', '生成式 AI 技術原理', '產業 AI 導入案例分析', 'AI 模型評估與優化'],
-    images: ['/course_ai_ccchen.jpg', '/course_ai_20251209-1217.png']
+    images: ['/course_ai_20251209-1217.png']
   },
   {
     cat: 'ai', 
@@ -124,7 +124,7 @@ const COURSES = [
     hours:'48 小時',
     desc:'系統化學習 AI 導入、規劃與應用情境建構，強化跨領域數位工具整合能力。（正在培訓中，尚未取得證書）',
     outcomes: ['AI 應用場景規劃', '數位轉型策略制定', 'AI 工具鏈整合', '證照考試重點解析'],
-    images: []
+    images: ['/course_ai_ccchen.jpg']
   },
   {
     cat: 'ai', 
